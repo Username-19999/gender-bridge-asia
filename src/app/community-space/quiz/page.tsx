@@ -9,6 +9,13 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Sprout, MessageCircle, GraduationCap } from "lucide-react";
 
+type QuizQuestion = {
+  question: { en: string; zh: string };
+  options: { en: string[]; zh: string[] };
+  correct: number;
+  explanation: { en: string; zh: string };
+};
+
 export default function QuizGame() {
   const { t, updateGameProgress, language } = useLanguage();
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -16,7 +23,7 @@ export default function QuizGame() {
   const [showFeedback, setShowFeedback] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [quizCompleted, setQuizCompleted] = useState(false);
-  const [gameQuestions, setGameQuestions] = useState<any[]>([]);
+  const [gameQuestions, setGameQuestions] = useState<QuizQuestion[]>([]);
 
   // Initialize game with 10 random questions from the pool and shuffle answers
   useEffect(() => {

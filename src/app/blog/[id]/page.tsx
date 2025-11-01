@@ -11,7 +11,17 @@ export default function BlogDetailPage() {
   const params = useParams();
   const id = params.id as string;
 
-  const articles: Record<string, any> = {
+  type Article = {
+    date: string;
+    category: string;
+    title: string;
+    content: {
+      en: string;
+      zh: string;
+    };
+  };
+
+  const articles: Record<string, Article> = {
     "1": {
       date: "25 October, 2025",
       category: t("Research", "研究"),
