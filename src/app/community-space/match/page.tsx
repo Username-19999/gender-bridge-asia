@@ -330,8 +330,6 @@ export default function MatchGame() {
       "堕杀胎儿": "在婴儿能在子宫外存活之前终止妊娠",
       "Gender Asymmetry": "Men hold all leadership positions in a company",
       "男女不均衡": "男性在公司中担任所有领导职位",
-      "Patriarchy": "Only men can vote or own property in a society",
-      "父权制": "社会中只有男性可以投票或拥有财产",
       "Hegemonic Masculinity": "Society expects men to be tough and never show weakness",
       "支配性男性气质": "社会期望男性坚强，从不表现软弱",
       "Masculinity": "Cultural ideas about what makes a 'real man'",
