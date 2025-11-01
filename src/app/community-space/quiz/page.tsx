@@ -979,7 +979,7 @@ export default function QuizGame() {
               <h3 className="text-2xl font-bold mb-6">{gameQuestions[currentQuestion].question[lang]}</h3>
 
               <div className="space-y-3 mb-6">
-                {gameQuestions[currentQuestion].options[lang].map((option, index) => (
+                {gameQuestions[currentQuestion].options[lang].map((option: string, index: number) => (
                   <button
                     key={index}
                     onClick={() => !showFeedback && handleAnswer(index)}
