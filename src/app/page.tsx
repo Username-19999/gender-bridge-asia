@@ -61,28 +61,28 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-[#A7D9E4] noise-texture pt-6 sm:pt-8 pb-12 sm:pb-20 relative border-b border-black/5 shadow-sm overflow-x-hidden">
+      <section className="bg-[#A7D9E4] noise-texture pt-8 pb-20 relative overflow-hidden border-b border-black/5 shadow-sm">
         <AnimatedSection>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center">
-              <div className="relative min-h-[200px] sm:min-h-[280px] md:min-h-[400px] lg:min-h-[550px] flex items-center justify-center py-4 sm:py-6 mb-2 sm:mb-0 md:my-[-16px]">
-                <div className="relative w-full">
-                  <h1 className="text-[2rem] sm:text-[3.5rem] md:text-[5.5rem] lg:text-[9rem] xl:text-[12rem] font-black leading-none tracking-tighter text-[#0E3D8C] opacity-15">
+              <div className="relative min-h-[350px] sm:min-h-[450px] md:min-h-[550px] flex items-center justify-center py-4 -mb-8 md:my-[-16px]">
+                <div className="relative">
+                  <h1 className="text-[4rem] sm:text-[6rem] md:text-[9rem] lg:text-[12rem] xl:text-[14rem] font-black leading-none tracking-tighter text-[#0E3D8C] opacity-15 whitespace-nowrap">
                     EAST ASIAN
                   </h1>
-                  <div className="absolute top-[15%] sm:top-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <h2 className="text-[2.2rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] font-black leading-none tracking-tight text-[#0C2D6C]">
+                  <div className="absolute top-[8%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-black leading-none tracking-tight whitespace-nowrap text-[#0C2D6C]">
                       GENDER
                     </h2>
                   </div>
-                  <div className="absolute top-[88%] sm:top-[92%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <h2 className="text-[2.2rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] font-black leading-none tracking-tight text-[#0C2D6C]">
+                  <div className="absolute top-[94%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-black leading-none tracking-tight whitespace-nowrap text-[#0C2D6C]">
                       BRIDGE
                     </h2>
                   </div>
                 </div>
               </div>
-              <div className="max-w-4xl mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
                 <p className="text-sm md:text-base leading-[1.9] text-[#000]">
                   {language === "en" ? (
                     <>
@@ -212,23 +212,23 @@ export default function Home() {
       </section>
 
       {/* Footer with Follow Us */}
-      <footer className="bg-[#F6F7F8] py-12 sm:py-16 border-t-2 border-[#4B4B4B]">
+      <footer className="bg-[#F6F7F8] py-8 sm:py-12 lg:py-16 border-t-2 border-[#4B4B4B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 text-black">{t("Follow Us", "关注我们")}</h2>
-            <p className="text-base sm:text-lg lg:text-xl text-[#333] mb-6 sm:mb-8">{t("Join our community and stay connected", "加入我们的社区，保持联系")}</p>
+          <div className="text-center mb-6 sm:mb-8 lg:mb-12">
+            <h2 className="text-lg sm:text-3xl lg:text-5xl font-black mb-2 sm:mb-4 lg:mb-6 text-black">{t("Follow Us", "关注我们")}</h2>
+            <p className="text-xs sm:text-base lg:text-xl text-[#333] mb-4 sm:mb-6 lg:mb-8">{t("Join our community and stay connected", "加入我们的社区，保持联系")}</p>
 
-            <div className="flex justify-center space-x-4 sm:space-x-6 lg:space-x-8">
+            <div className="flex justify-center space-x-3 sm:space-x-5 lg:space-x-8">
               <a href="#" className="group" title="Twitter">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-black flex items-center justify-center group-hover:bg-[#d62e39] transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white transition-transform group-hover:rotate-6" fill="currentColor" viewBox="0 0 24 24">
+                <div className="w-8 h-8 sm:w-11 sm:h-11 lg:w-14 lg:h-14 rounded-full bg-black flex items-center justify-center group-hover:bg-[#d62e39] transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 text-white transition-transform group-hover:rotate-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                   </svg>
                 </div>
               </a>
               <a href="#" className="group" title="Facebook">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-black flex items-center justify-center group-hover:bg-[#d62e39] transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white transition-transform group-hover:rotate-6" fill="currentColor" viewBox="0 0 24 24">
+                <div className="w-8 h-8 sm:w-11 sm:h-11 lg:w-14 lg:h-14 rounded-full bg-black flex items-center justify-center group-hover:bg-[#d62e39] transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 text-white transition-transform group-hover:rotate-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                   </svg>
                 </div>
