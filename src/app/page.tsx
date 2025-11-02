@@ -61,28 +61,28 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-[#A7D9E4] noise-texture pt-8 pb-20 relative overflow-hidden border-b border-black/5 shadow-sm">
+      <section className="bg-[#A7D9E4] noise-texture pt-4 sm:pt-8 pb-12 sm:pb-20 relative overflow-hidden border-b border-black/5 shadow-sm">
         <AnimatedSection>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center">
-              <div className="relative min-h-[350px] sm:min-h-[450px] md:min-h-[550px] flex items-center justify-center py-4 -mb-8 md:my-[-16px]">
-                <div className="relative">
-                  <h1 className="text-[4rem] sm:text-[6rem] md:text-[9rem] lg:text-[12rem] xl:text-[14rem] font-black leading-none tracking-tighter text-[#0E3D8C] opacity-15 whitespace-nowrap">
+              <div className="relative min-h-[250px] sm:min-h-[350px] md:min-h-[450px] lg:min-h-[550px] flex items-center justify-center py-2 sm:py-4 -mb-4 sm:-mb-8 md:my-[-16px]">
+                <div className="relative w-full max-w-full overflow-hidden px-2">
+                  <h1 className="text-[2.5rem] sm:text-[4rem] md:text-[6rem] lg:text-[9rem] xl:text-[12rem] font-black leading-none tracking-tighter text-[#0E3D8C] opacity-15 whitespace-nowrap">
                     EAST ASIAN
                   </h1>
                   <div className="absolute top-[8%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-black leading-none tracking-tight whitespace-nowrap text-[#0C2D6C]">
+                    <h2 className="text-[2.75rem] sm:text-[4.5rem] md:text-[6.5rem] lg:text-[8rem] xl:text-[10rem] font-black leading-none tracking-tight whitespace-nowrap text-[#0C2D6C]">
                       GENDER
                     </h2>
                   </div>
                   <div className="absolute top-[94%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-black leading-none tracking-tight whitespace-nowrap text-[#0C2D6C]">
+                    <h2 className="text-[2.75rem] sm:text-[4.5rem] md:text-[6.5rem] lg:text-[8rem] xl:text-[10rem] font-black leading-none tracking-tight whitespace-nowrap text-[#0C2D6C]">
                       BRIDGE
                     </h2>
                   </div>
                 </div>
               </div>
-              <div className="max-w-4xl mx-auto">
+              <div className="max-w-4xl mx-auto px-2">
                 <p className="text-sm md:text-base leading-[1.9] text-[#000]">
                   {language === "en" ? (
                     <>

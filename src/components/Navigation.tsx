@@ -112,7 +112,7 @@ export function Navigation() {
       </svg>
 
       <nav className="sticky top-0 z-50 bg-white border-b-4 border-black shadow-[0_4px_12px_rgba(0,0,0,0.08)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
           {/* Top Row - Utilities (hidden on mobile) */}
           <div className="hidden lg:flex justify-end items-center py-1.5">
             <div className="flex items-center space-x-2">
@@ -188,32 +188,32 @@ export function Navigation() {
           </div>
 
           {/* Bottom Row - Logo and Navigation */}
-          <div className="flex justify-between items-center py-2.5">
-          <Link href="/" className="flex-shrink-0 transition-transform hover:scale-105">
-              <div className="text-3xl font-black tracking-tight">
+          <div className="flex justify-between items-center py-2 lg:py-2.5">
+          <Link href="/" className="flex-shrink transition-transform hover:scale-105 min-w-0">
+              <div className="text-sm sm:text-lg md:text-2xl lg:text-3xl font-black tracking-tight leading-tight">
               <span className="text-[#d62e39] transition-colors hover:text-[#b82531]">EAST ASIAN</span>
               <span className="text-[#00a19a] transition-colors hover:text-[#008c85]"> GENDER</span>
               <span className="text-black"> BRIDGE</span>
             </div>
           </Link>
 
-          <div className="lg:hidden flex items-center space-x-2">
+          <div className="lg:hidden flex items-center space-x-0.5 flex-shrink-0">
             <div className="relative" ref={mobileLanguageMenuRef}>
-              <button onClick={() => setMobileLanguageMenuOpen(!mobileLanguageMenuOpen)} className="p-2">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <button onClick={() => setMobileLanguageMenuOpen(!mobileLanguageMenuOpen)} className="p-1.5 hover:bg-gray-100 rounded">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                 </svg>
               </button>
               {mobileLanguageMenuOpen && (
                 <div className="absolute right-0 mt-2 w-32 bg-white border-2 border-black shadow-lg z-50">
-                  <button onClick={() => { setLanguage("en"); setMobileLanguageMenuOpen(false); }} className="w-full px-4 py-2 text-left hover:bg-gray-100 font-semibold">English</button>
-                  <button onClick={() => { setLanguage("zh"); setMobileLanguageMenuOpen(false); }} className="w-full px-4 py-2 text-left hover:bg-gray-100 font-semibold">中文</button>
+                  <button onClick={() => { setLanguage("en"); setMobileLanguageMenuOpen(false); }} className="w-full px-4 py-2 text-sm text-left hover:bg-gray-100 font-semibold">English</button>
+                  <button onClick={() => { setLanguage("zh"); setMobileLanguageMenuOpen(false); }} className="w-full px-4 py-2 text-sm text-left hover:bg-gray-100 font-semibold">中文</button>
                 </div>
               )}
             </div>
 
-            <button className="p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button className="p-1.5 hover:bg-gray-100 rounded" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
