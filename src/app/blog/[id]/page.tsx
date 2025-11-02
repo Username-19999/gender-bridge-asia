@@ -167,7 +167,7 @@ export default function BlogDetailPage() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-sm text-gray-600 mb-8">
+        <div className="text-xs sm:text-sm text-gray-600 mb-8">
           <Link href="/" className="text-[#00a19a] font-semibold hover:underline">
             {language === "en" ? "Home" : "首页"}
           </Link>
@@ -184,20 +184,20 @@ export default function BlogDetailPage() {
         <AnimatedSection>
           <article>
             <div className="mb-8">
-              <span className="inline-block bg-[#00a19a] text-white px-4 py-2 font-bold mb-4">{article.category}</span>
-              <p className="text-sm text-gray-500 mb-2">{article.date}</p>
+              <span className="inline-block bg-[#00a19a] text-white px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-base font-bold mb-4">{article.category}</span>
+              <p className="text-xs sm:text-sm text-gray-500 mb-2">{article.date}</p>
             </div>
 
-            <h1 className="text-4xl md:text-4xl font-black mb-8 leading-tight">{article.title}</h1>
+            <h1 className="text-2xl sm:text-4xl font-black mb-8 leading-tight">{article.title}</h1>
 
-            <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
+            <div className="prose prose-sm sm:prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
             <div className="mt-12 pt-8 border-t-2 border-gray-200">
-              <h3 className="text-2xl font-bold mb-4">{t("Share this article", "分享这篇文章")}</h3>
+              <h3 className="text-lg sm:text-2xl font-bold mb-4">{t("Share this article", "分享这篇文章")}</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-[#00a19a] hover:underline font-semibold">Twitter</a>
-                <a href="#" className="text-[#00a19a] hover:underline font-semibold">LinkedIn</a>
-                <a href="#" className="text-[#00a19a] hover:underline font-semibold">Facebook</a>
+                <a href="#" className="text-sm sm:text-base text-[#00a19a] hover:underline font-semibold">Twitter</a>
+                <a href="#" className="text-sm sm:text-base text-[#00a19a] hover:underline font-semibold">LinkedIn</a>
+                <a href="#" className="text-sm sm:text-base text-[#00a19a] hover:underline font-semibold">Facebook</a>
               </div>
             </div>
           </article>

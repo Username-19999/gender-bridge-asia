@@ -37,8 +37,8 @@ export default function BlogPage() {
 
         <AnimatedSection>
           <div className="mb-16">
-            <h1 className="text-6xl font-black mb-4">{t("Research Blog", "研究博客")}</h1>
-            <p className="text-xl text-gray-600 mb-12">
+            <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Research Blog", "研究博客")}</h1>
+            <p className="text-base sm:text-xl text-gray-600 mb-12">
               {t("Explore cutting-edge research directions in gender studies and regional insights from across East Asia", "探索性别研究的前沿方向，并获取东亚地区的区域洞察")}
             </p>
 
@@ -48,13 +48,13 @@ export default function BlogPage() {
                   <Card className={`p-8 bg-white hover:shadow-xl transition-all ${article.color}`}>
                     <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                       <div className="mb-2 md:mb-0">
-                        <span className="inline-block bg-gray-100 px-3 py-1 text-sm font-bold mb-2">{article.category}</span>
-                        <p className="text-sm text-gray-500">{article.date}</p>
+                        <span className="inline-block bg-gray-100 px-3 py-1 text-xs sm:text-sm font-bold mb-2">{article.category}</span>
+                        <p className="text-xs sm:text-sm text-gray-500">{article.date}</p>
                       </div>
                     </div>
-                    <h2 className="text-3xl font-bold mb-4">{article.title}</h2>
-                    <p className="text-gray-700 text-lg mb-6 leading-relaxed line-clamp-2">{article.excerpt}</p>
-                    <Link href={`/blog/${article.id}`} className="inline-flex items-center text-[#00a19a] font-bold text-lg hover:underline">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-4">{article.title}</h2>
+                    <p className="text-gray-700 text-sm sm:text-lg mb-6 leading-relaxed line-clamp-2">{article.excerpt}</p>
+                    <Link href={`/blog/${article.id}`} className="inline-flex items-center text-[#00a19a] font-bold text-base sm:text-lg hover:underline">
                       {t("Read Full Article", "阅读全文")} →
                     </Link>
                   </Card>
