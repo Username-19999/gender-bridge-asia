@@ -92,8 +92,8 @@ export default function ContactUs() {
 
         <AnimatedSection immediate={true}>
           <div className="mb-12">
-            <h1 className="text-6xl font-black mb-4">{t("Contact Us", "联系我们")}</h1>
-            <p className="text-xl text-gray-600">
+            <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Contact Us", "联系我们")}</h1>
+            <p className="text-base sm:text-xl text-gray-600">
               {t("We'd love to hear from you", "欢迎联系我们，我们期待听到您的声音")}
             </p>
           </div>

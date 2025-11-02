@@ -65,10 +65,10 @@ export default function ActionCenter() {
         <AnimatedSection immediate={true}>
           <div className="mb-16">
             {/* Page Header - Left Aligned */}
-            <h1 className="text-6xl font-black mb-4">
+            <h1 className="text-4xl sm:text-6xl font-black mb-4">
               {t("Action Center", "行动中心")}
             </h1>
-            <p className="text-xl text-gray-600 mb-12">
+            <p className="text-base sm:text-xl text-gray-600 mb-12">
               {t("Transform Knowledge into Action", "将知识转化为行动")}
             </p>
 
@@ -85,12 +85,12 @@ export default function ActionCenter() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold mb-3">
+                  <h3 className="text-lg sm:text-2xl font-bold mb-3">
                     {card.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-700 leading-relaxed mb-6 flex-grow">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6 flex-grow">
                     {card.description}
                   </p>
 

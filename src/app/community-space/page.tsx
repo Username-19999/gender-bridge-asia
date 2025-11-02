@@ -56,12 +56,12 @@ export default function CommunitySpace() {
 
         <AnimatedSection immediate={true}>
           <div className="mb-16">
-            <h1 className="text-6xl font-black mb-4">{t("Community Space", "社区空间")}</h1>
-            <p className="text-xl text-gray-600 mb-12">
+            <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Community Space", "社区空间")}</h1>
+            <p className="text-base sm:text-xl text-gray-600 mb-12">
               {t("Explore interactive games to deepen your understanding of gender equality", "通过互动游戏深化对性别平等的理解")}
             </p>
 
-            <h2 className="text-4xl font-black mb-8">{t("Interactive Games", "互动游戏")}</h2>
+            <h2 className="text-3xl sm:text-4xl font-black mb-8">{t("Interactive Games", "互动游戏")}</h2>
             
             {/* Progress Bar */}
             <div className="mb-8">
