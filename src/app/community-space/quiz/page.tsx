@@ -951,7 +951,7 @@ export default function QuizGame() {
     <div className="min-h-screen bg-gradient-to-br from-[#00a19a]/10 to-[#008c85]/10">
       <Navigation />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-sm text-gray-600 mb-8">
+        <div className="text-xs sm:text-sm text-gray-600 mb-8">
           <Link href="/" className="text-[#00a19a] font-semibold hover:underline">
             {language === "en" ? "Home" : "首页"}
           </Link>
@@ -967,9 +967,9 @@ export default function QuizGame() {
 
         <AnimatedSection>
           <div className="text-center mb-12">
-            <h1 className="text-6xl font-black mb-4">{t("Gender Knowledge Quiz", "性别知识测验")}</h1>
-            <p className="text-xl text-gray-700 mb-2">{t("How much do you know about gender?", "你对性别了解多少？")}</p>
-            <p className="text-lg text-gray-600 font-semibold">{t("(Single Choice Questions)", "（单选题）")}</p>
+            <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Gender Knowledge Quiz", "性别知识测验")}</h1>
+            <p className="text-base sm:text-xl text-gray-700 mb-2">{t("How much do you know about gender?", "你对性别了解多少？")}</p>
+            <p className="text-sm sm:text-lg text-gray-600 font-semibold">{t("(Single Choice Questions)", "（单选题）")}</p>
           </div>
 
           {!quizCompleted ? (
@@ -983,7 +983,7 @@ export default function QuizGame() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold mb-6">{gameQuestions[currentQuestion].question[lang]}</h3>
+              <h3 className="text-lg sm:text-2xl font-bold mb-6">{gameQuestions[currentQuestion].question[lang]}</h3>
 
               <div className="space-y-3 mb-6">
                 {gameQuestions[currentQuestion].options[lang].map((option: string, index: number) => (
@@ -991,7 +991,7 @@ export default function QuizGame() {
                     key={index}
                     onClick={() => !showFeedback && handleAnswer(index)}
                     disabled={showFeedback}
-                    className={`w-full p-4 text-left rounded-lg border-2 transition-all ${
+                    className={`w-full p-4 text-sm sm:text-base text-left rounded-lg border-2 transition-all ${
                       showFeedback
                         ? index === gameQuestions[currentQuestion].correct
                           ? "border-green-500 bg-green-50"
@@ -1008,10 +1008,10 @@ export default function QuizGame() {
 
               {showFeedback && (
                 <div className={`p-4 rounded-lg mb-6 ${selectedAnswer === gameQuestions[currentQuestion].correct ? "bg-green-50 border-2 border-green-500" : "bg-red-50 border-2 border-red-500"}`}>
-                  <p className="font-bold mb-2">
+                  <p className="text-sm sm:text-base font-bold mb-2">
                     {selectedAnswer === gameQuestions[currentQuestion].correct ? "✅ " + t("Correct!", "正确！") : "❌ " + t("Incorrect", "答错了")}
                   </p>
-                  <p className="text-gray-700">{gameQuestions[currentQuestion].explanation[lang]}</p>
+                  <p className="text-sm sm:text-base text-gray-700">{gameQuestions[currentQuestion].explanation[lang]}</p>
                 </div>
               )}
 
