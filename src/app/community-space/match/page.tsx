@@ -430,8 +430,8 @@ export default function MatchGame() {
 
         <AnimatedSection>
           <div className="text-center mb-12">
-            <h1 className="text-6xl font-black mb-4">{t("GenderTerms Match", "术语连连看")}</h1>
-            <p className="text-xl text-gray-700">{t("Match each term with its correct definition", "将每个术语与正确的定义连线")}</p>
+            <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("GenderTerms Match", "术语连连看")}</h1>
+            <p className="text-base sm:text-xl text-gray-700">{t("Match each term with its correct definition", "将每个术语与正确的定义连线")}</p>
             <p className="text-sm text-gray-600 mt-2">
               {t("Attempts", "尝试次数")}: {attempts} | {t("Matched", "已匹配")}: {matches.size}/{gameTerms.length}
             </p>
@@ -495,8 +495,8 @@ export default function MatchGame() {
             </div>
           ) : (
             <Card className="p-12 bg-white shadow-xl text-center">
-              <h2 className="text-4xl font-black mb-6">{t("Congratulations!", "恭喜完成！")}</h2>
-              <p className="text-6xl font-black mb-8">{attempts} {t("attempts", "次尝试")}</p>
+              <h2 className="text-2xl sm:text-4xl font-black mb-6">{t("Congratulations!", "恭喜完成！")}</h2>
+              <p className="text-4xl sm:text-6xl font-black mb-8">{attempts} {t("attempts", "次尝试")}</p>
 
               <div className={`inline-block px-8 py-4 rounded-lg ${getScore().bg} mb-8`}>
                 <div className="flex justify-center mb-2">

@@ -475,10 +475,10 @@ export default function BSRIGame() {
 
         <AnimatedSection>
           <div className="text-center mb-12">
-            <h1 className="text-6xl font-black mb-4 whitespace-nowrap">
+            <h1 className="text-3xl sm:text-6xl font-black mb-4 whitespace-nowrap">
               {t("Gender Role Self-Test", "性别角色自测")}
             </h1>
-            <p className="text-xl text-gray-700">
+            <p className="text-base sm:text-xl text-gray-700">
               {t("BSRI Assessment", "BSRI评估")}
             </p>
           </div>
