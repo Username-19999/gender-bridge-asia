@@ -103,43 +103,43 @@ export default function AcademicHub() {
 
         <AnimatedSection immediate={true}>
           <div className="mb-16">
-            <h1 className="text-6xl font-black mb-4">{t("Academic Hub", "学术中心")}</h1>
-            <p className="text-xl text-gray-600 mb-12">{t("Advancing gender studies through rigorous research and regional insights", "通过严谨的研究和区域见解推进性别研究")}</p>
+            <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Academic Hub", "学术中心")}</h1>
+            <p className="text-base sm:text-xl text-gray-600 mb-12">{t("Advancing gender studies through rigorous research and regional insights", "通过严谨的研究和区域见解推进性别研究")}</p>
 
-            <h2 className="text-4xl font-black mb-8">{t("Research Frontiers in Gender Studies", "性别研究的前沿领域")}</h2>
+            <h2 className="text-3xl sm:text-4xl font-black mb-8">{t("Research Frontiers in Gender Studies", "性别研究的前沿领域")}</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-16">
               {researchFrontiers.map((item, index) => (
                 <Card key={index} className={`p-6 hover:shadow-lg transition-shadow ${item.color}`}>
-                  <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
-                  <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                  <h3 className="text-lg sm:text-2xl font-bold mb-3">{item.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{item.description}</p>
                 </Card>
               ))}
             </div>
 
-            <h2 className="text-4xl font-black mb-8">{t("East Asian Gender Studies Core Topics", "东亚性别研究核心课题")}</h2>
+            <h2 className="text-3xl sm:text-4xl font-black mb-8">{t("East Asian Gender Studies Core Topics", "东亚性别研究核心课题")}</h2>
             <div className="grid grid-cols-1 gap-6 mb-16">
               {asiaResearch.map((item, index) => (
                 <Card key={index} className={`p-8 ${item.color} border-2 border-gray-200 hover:shadow-xl transition-shadow`}>
-                  <h3 className="text-3xl font-bold mb-2">{item.title}</h3>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-4">{item.subtitle}</h4>
-                  <p className="text-gray-700 text-lg leading-relaxed">{item.description}</p>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-2">{item.title}</h3>
+                  <h4 className="text-base sm:text-xl font-semibold text-gray-800 mb-4">{item.subtitle}</h4>
+                  <p className="text-gray-700 text-sm sm:text-lg leading-relaxed">{item.description}</p>
                 </Card>
               ))}
             </div>
 
             <div className="border-t-4 border-gray-300 my-12"></div>
 
-            <h2 className="text-4xl font-black mb-8">{t("Research Blog", "研究博客")}</h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <h2 className="text-3xl sm:text-4xl font-black mb-8">{t("Research Blog", "研究博客")}</h2>
+            <p className="text-base sm:text-xl text-gray-600 mb-8">
               {t("Stay updated with our latest research findings, policy analysis, and academic insights", "了解我们的最新研究成果、政策分析和学术见解")}
             </p>
             <Link href="/blog">
               <div className="bg-gradient-to-r from-[#00a19a] to-[#008c85] text-white p-8 rounded-lg hover:shadow-xl transition-all cursor-pointer">
-                <h3 className="text-3xl font-bold mb-4">{t("Explore Our Research Articles", "探索我们的研究文章")}</h3>
-                <p className="text-lg opacity-90 mb-4">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4">{t("Explore Our Research Articles", "探索我们的研究文章")}</h3>
+                <p className="text-sm sm:text-lg opacity-90 mb-4">
                   {t("Read in-depth analysis, case studies, and thought leadership from our researchers", "阅读我们研究人员的深入分析、案例研究和思想领导力")}
                 </p>
-                <span className="inline-flex items-center text-xl font-bold">
+                <span className="inline-flex items-center text-base sm:text-xl font-bold">
                   {t("View All Articles", "查看所有文章")} →
                 </span>
               </div>

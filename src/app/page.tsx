@@ -155,8 +155,8 @@ export default function Home() {
         <AnimatedSection>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center mb-12">
-              <h2 className="text-4xl sm:text-5xl font-black mb-4 text-black animate-fade-in">{t("Latest Updates", "最新动态")}</h2>
-              <p className="text-base sm:text-lg max-w-2xl mx-auto text-gray-700 px-4">
+              <h2 className="text-3xl sm:text-5xl font-black mb-4 text-black animate-fade-in">{t("Latest Updates", "最新动态")}</h2>
+              <p className="text-sm sm:text-lg max-w-2xl mx-auto text-gray-700 px-4">
                 {t(
                   "Explore the latest research findings from the East Asian Gender Bridge, where we analyze emerging trends, test new concepts, and translate evidence-based solutions into public dialogue and action.",
                   "探索来自东亚性别桥梁的最新研究发现。我们在此分析新兴趋势、验证新概念，并将基于证据的解决方案转化为公共对话与行动。"
@@ -167,17 +167,17 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <Card className="p-6 bg-white border-none transition-all duration-300 hover:shadow-xl hover:-translate-y-1" style={{boxShadow: '0 4px 8px rgba(0,0,0,0.05)'}}>
                 <div className="space-y-4">
-                  <p className="text-sm text-gray-500">25 October, 2025</p>
-                  <h3 className="text-2xl font-bold transition-colors hover:text-[#d62e39]">
+                  <p className="text-xs sm:text-sm text-gray-500">25 October, 2025</p>
+                  <h3 className="text-lg sm:text-2xl font-bold transition-colors hover:text-[#d62e39]">
                     {t("Bias Amplification in Visual Recognition: How Structured Models Perpetuate and Exacerbate Social Stereotypes", "视觉识别任务中的偏见放大：结构化模型如何固化并恶化社会刻板印象")}
                   </h3>
-                  <p className="text-gray-700 line-clamp-2">
+                  <p className="text-sm sm:text-base text-gray-700 line-clamp-2">
                     {t(
                       "Visual recognition tasks that incorporate language are increasingly combining structured prediction and deep learning. However, research by Zhao et al. (2017) warns that these methods may discover and exploit societal biases...",
                       "视觉识别任务越来越多地结合结构化预测和深度学习。然而，赵洁玉等人进行的研究（2017）警告说，这种方法存在风险，即它可能会发现并利用底层网络语料库中存在的社会偏见..."
                     )}
                   </p>
-                  <Link href="/blog/1" className="inline-flex items-center text-[#00A8A8] font-semibold hover:underline hover:translate-x-2 transition-transform">
+                  <Link href="/blog/1" className="inline-flex items-center text-sm sm:text-base text-[#00A8A8] font-semibold hover:underline hover:translate-x-2 transition-transform">
                     {t("View Item", "查看详情")} →
                   </Link>
                 </div>
@@ -185,17 +185,17 @@ export default function Home() {
 
               <Card className="p-6 bg-white border-none transition-all duration-300 hover:shadow-xl hover:-translate-y-1" style={{boxShadow: '0 4px 8px rgba(0,0,0,0.05)'}}>
                 <div className="space-y-4">
-                  <p className="text-sm text-gray-500">30 October, 2025</p>
-                  <h3 className="text-2xl font-bold transition-colors hover:text-[#d62e39]">
+                  <p className="text-xs sm:text-sm text-gray-500">30 October, 2025</p>
+                  <h3 className="text-lg sm:text-2xl font-bold transition-colors hover:text-[#d62e39]">
                     {t("Algorithmic Discrimination: A New Perspective on Cost-Driven Information Inequality", "算法歧视的新视角：成本效益驱动下的信息分配不均")}
                   </h3>
-                  <p className="text-gray-700 line-clamp-2">
+                  <p className="text-sm sm:text-base text-gray-700 line-clamp-2">
                     {t(
                       "The increasing adoption of algorithms in decision-making has generated concerns about discriminatory outcomes. This empirical study by Lambrecht and Tucker (2018) provides a nuanced explanation...",
                       "算法在自动化决策中的应用日益普遍，引发了人们对自动化选择可能产生歧视性结果的深切关注。Lambrecht 和 Tucker (2018) 通过一项针对 STEM 职业机会广告投放的实证研究，提供了一个新颖的解释..."
                     )}
                   </p>
-                  <Link href="/blog/2" className="inline-flex items-center text-[#00A8A8] font-semibold hover:underline hover:translate-x-2 transition-transform">
+                  <Link href="/blog/2" className="inline-flex items-center text-sm sm:text-base text-[#00A8A8] font-semibold hover:underline hover:translate-x-2 transition-transform">
                     {t("View Item", "查看详情")} →
                   </Link>
                 </div>
@@ -203,7 +203,7 @@ export default function Home() {
             </div>
 
             <div className="text-right">
-              <Link href="/blog" className="text-xl sm:text-2xl font-bold hover:underline hover:text-[#00A8A8] transition-all hover:translate-x-2 inline-block">
+              <Link href="/blog" className="text-base sm:text-2xl font-bold hover:underline hover:text-[#00A8A8] transition-all hover:translate-x-2 inline-block">
                 {t("View All", "查看全部")} →
               </Link>
             </div>
