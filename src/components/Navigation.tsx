@@ -190,7 +190,7 @@ export function Navigation() {
           {/* Bottom Row - Logo and Navigation */}
           <div className="flex justify-between items-center py-2 lg:py-2.5">
           <Link href="/" className="flex-shrink transition-transform hover:scale-105 min-w-0">
-              <div className="text-sm sm:text-lg md:text-2xl lg:text-3xl font-black tracking-tight leading-tight">
+              <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-black tracking-tight leading-tight">
               <span className="text-[#d62e39] transition-colors hover:text-[#b82531]">EAST ASIAN</span>
               <span className="text-[#00a19a] transition-colors hover:text-[#008c85]"> GENDER</span>
               <span className="text-black"> BRIDGE</span>
