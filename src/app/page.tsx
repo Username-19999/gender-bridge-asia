@@ -121,7 +121,7 @@ export default function Home() {
               <div className={`h-full w-full bg-gradient-to-br ${slide.gradient} flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 md:py-12`}>
                 <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center">
                   <div className="text-[#0E3D8C] animate-fade-in px-2 sm:px-4 md:px-8 lg:px-16">
-                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 leading-tight whitespace-nowrap">{slide.title}</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 leading-tight">{slide.title}</h2>
                     <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 leading-relaxed text-[#000]">{slide.description}</p>
                     <Link href={slide.link}>
                       <Button className="bg-[#0E3D8C] text-white hover:bg-[#00A8A8] hover:scale-105 px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-lg font-bold rounded-none shadow-lg transition-all duration-300">

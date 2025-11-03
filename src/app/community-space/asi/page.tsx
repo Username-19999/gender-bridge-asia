@@ -510,7 +510,7 @@ export default function ASIGame() {
 
         <AnimatedSection>
           <div className="text-center mb-12">
-            <h1 className="text-3xl sm:text-6xl font-black mb-4 whitespace-nowrap">
+            <h1 className="text-3xl sm:text-6xl font-black mb-4">
               {t("Ambivalent Sexism Inventory", "矛盾性别偏见自测")}
             </h1>
             <p className="text-base sm:text-xl text-gray-700">

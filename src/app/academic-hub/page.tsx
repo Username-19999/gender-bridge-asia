@@ -64,7 +64,7 @@ export default function AcademicHub() {
 
   const asiaResearch = [
     {
-      title: t("China Mainland", "中国大陆"),
+      title: t("The Chinese Mainland", "中国大陆"),
       subtitle: t("Online Feminist Discourse, State Governance & Women's Status in the Digital Economy", "线上女权话语、国家治理与数字经济下的女性地位"),
       description: t("Focuses on feminist activism and discourse on social media, policy evaluation mechanisms like gender budgeting, and the impact of digital economy development on women's labor status.", "聚焦社交媒体上的女权行动、法律政策评估机制（如社会性别预算），以及数字经济发展对女性劳动力地位的影响。"),
       color: "bg-gradient-to-br from-red-50 to-white"

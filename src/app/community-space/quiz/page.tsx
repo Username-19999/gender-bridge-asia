@@ -398,13 +398,13 @@ export default function QuizGame() {
         zh: "什么是'重男轻女'？"
       },
       options: {
-        en: ["Preferring daughters", "Systematic preference for male children", "Equal preference", "No preference"],
-        zh: ["偏爱女儿", "对男性子女的系统性偏好", "平等偏好", "无偏好"]
+        en: ["Preferring daughters", "Systematic preference for male offspring", "Equal preference", "No preference"],
+        zh: ["偏爱女儿", "系统性重男倾向", "平等偏好", "无偏好"]
       },
       correct: 1,
       explanation: {
         en: "Son preference is a systematic bias in favor of male children over female children in various aspects of life.",
-        zh: "重男轻女是在生活的各个方面对男性子女而非女性子女的系统性偏见。"
+        zh: "重男轻女是在生活的各个方面对男童而非女童的系统性偏见。"
       }
     },
     {
