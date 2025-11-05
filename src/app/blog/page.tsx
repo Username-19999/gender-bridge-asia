@@ -15,7 +15,7 @@ export default function BlogPage() {
       id: 1,
       date: "25 October, 2025",
       title: t("Bias Amplification in Visual Recognition: How Structured Models Perpetuate and Exacerbate Social Stereotypes", "视觉识别任务中的偏见放大：结构化模型如何固化并恶化社会刻板印象"),
-      excerpt: t("Visual recognition tasks that incorporate language are increasingly combining structured prediction and deep learning. However, research by Zhao et al. (2017) warns that these methods may discover and exploit societal biases present in web corpora.", "视觉识别任务越来越多地结合结构化预测和深度学习。然而，赵洁玉等人进行的研究（2017）警告说，这种方法存在风险，即它可能会发现并利用底层网络语料库中存在的社会偏见。"),
+      excerpt: t("Visual recognition tasks that incorporate language are increasingly combining structured prediction and deep learning. However, research by Zhao et al. (2017) warns that these methods may discover and exploit societal biases present in web corpora.", "视觉识别任务越来越多地结合结构化预测和深度学习。然而，赵洁玉等人（2017）进行的研究警告说，这种方法存在风险，即它可能会发现并利用底层网络语料库中存在的社会偏见。"),
       category: t("Research", "研究"),
       color: "border-l-4 border-[#00a19a]"
     },
@@ -23,7 +23,7 @@ export default function BlogPage() {
       id: 2,
       date: "30 October, 2025",
       title: t("Algorithmic Discrimination: A New Perspective on Cost-Driven Information Inequality", "算法歧视的新视角：成本效益驱动下的信息分配不均"),
-      excerpt: t("The increasing adoption of algorithms in decision-making has generated concerns about discriminatory outcomes. This empirical study by Lambrecht and Tucker (2018) provides a nuanced explanation by examining the display of ads promoting STEM career opportunities.", "算法在自动化决策中的应用日益普遍，引发了人们对自动化选择可能产生歧视性结果的深切关注。Lambrecht 和 Tucker (2018) 通过一项针对 STEM 职业机会广告投放的实证研究，提供了一个新颖的解释。"),
+      excerpt: t("The increasing adoption of algorithms in decision-making has generated concerns about disparate impact. This empirical study by Lambrecht and Tucker (2018) provides a nuanced explanation by examining the display of ads promoting STEM career opportunities.", "算法在自动化决策中的应用日益普遍，引发了人们对自动化选择可能产生歧视性结果的深切关注。Lambrecht 和 Tucker (2018) 的实证研究通过对 STEM 职业机会广告投放的分析，提供了一个新颖的解释。"),
       category: t("Research", "研究"),
       color: "border-l-4 border-[#00a19a]"
     }
@@ -39,7 +39,7 @@ export default function BlogPage() {
           <div className="mb-16">
             <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Research Blog", "研究博客")}</h1>
             <p className="text-base sm:text-xl text-gray-600 mb-12">
-              {t("Explore cutting-edge research directions in gender studies and regional insights from across East Asia", "探索性别研究的前沿方向，并获取东亚地区的区域洞察")}
+              {t("Explore cutting-edge research directions in gender studies and regional insights from across East Asia", "探索性别研究的前沿方向，并获取东亚区域洞察")}
             </p>
 
             <div className="grid gap-8">

@@ -147,9 +147,9 @@ export function Navigation() {
                 )}
               </div>
 
-              {/* Visual Aids */}
+              {/* Accessibility Aids */}
               <div className="relative" ref={colorBlindMenuRef}>
-                <button onClick={() => setColorBlindMenuOpen(!colorBlindMenuOpen)} className="p-1 hover:text-[#d62e39]" title={t("Visual Aids", "视觉辅助")}>
+                <button onClick={() => setColorBlindMenuOpen(!colorBlindMenuOpen)} className="p-1 hover:text-[#d62e39]" title={t("Accessibility Aids", "可访问性辅助")}>
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
                   </svg>
@@ -227,9 +227,9 @@ export function Navigation() {
                   <span className="text-sm font-bold">{t("Settings", "设置")}</span>
                 </div>
                 
-                {/* Visual Aids - Mobile */}
+                {/* Accessibility Aids - Mobile */}
                 <div className="mb-3">
-                  <label className="text-xs font-semibold text-gray-700 mb-1 block">{t("Visual Aids", "视觉辅助")}</label>
+                  <label className="text-xs font-semibold text-gray-700 mb-1 block">{t("Accessibility Aids", "可访问性辅助")}</label>
                   <select 
                     value={colorBlindMode} 
                     onChange={(e) => setColorBlindMode(e.target.value as "normal" | "protanopia" | "deuteranopia" | "tritanopia" | "highContrast")}

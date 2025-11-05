@@ -24,15 +24,15 @@ export default function CommunitySpace() {
     },
     {
       id: "match",
-      title: t("GenderTerms Match", "术语连连看"),
-      subtitle: t("Connect & Learn", "连线学习"),
+      title: t("Gender Terms Match", "性别术语连连看"),
+      subtitle: t("Connect and Learn", "连线学习"),
       icon: LinkIcon,
       color: "from-[#e6c839] to-[#f0d95c]",
       link: "/community-space/match"
     },
     {
       id: "asi",
-      title: t("Ambivalent Sexism Inventory", "矛盾性别偏见自测"),
+      title: t("Ambivalent Sexism Inventory (ASI)", "矛盾性别偏见自测"),
       subtitle: t("Self-Reflection Tool", "自我反思工具"),
       icon: Scale,
       color: "from-[#00357a] to-[#004a9e]",
@@ -40,8 +40,8 @@ export default function CommunitySpace() {
     },
     {
       id: "bsri",
-      title: t("Gender Role Self-Test", "性别角色自测"),
-      subtitle: t("BSRI Assessment", "BSRI评估"),
+      title: t("Bem Sex-Role Inventory (BSRI)", "性别角色自测"),
+      subtitle: t("Self-Assessment Tool", "BSRI自我评估"),
       icon: BarChart,
       color: "from-[#059669] to-[#10b981]",
       link: "/community-space/bsri"
@@ -58,10 +58,10 @@ export default function CommunitySpace() {
           <div className="mb-16">
             <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Community Space", "社区空间")}</h1>
             <p className="text-base sm:text-xl text-gray-600 mb-12">
-              {t("Explore interactive games to deepen your understanding of gender equality", "通过互动游戏深化对性别平等的理解")}
+              {t("Explore interactive tools to deepen your understanding of gender equality", "通过互动工具深化对性别平等的理解")}
             </p>
 
-            <h2 className="text-3xl sm:text-4xl font-black mb-8">{t("Interactive Games", "互动游戏")}</h2>
+            <h2 className="text-3xl sm:text-4xl font-black mb-8">{t("Interactive Tools", "互动工具")}</h2>
             
             {/* Progress Bar */}
             <div className="mb-8">
@@ -95,7 +95,7 @@ export default function CommunitySpace() {
                           <h3 className="text-xl sm:text-2xl font-black mb-2">{game.title}</h3>
                           <p className="text-base sm:text-lg opacity-90 mb-4 sm:mb-6">{game.subtitle}</p>
                           <div className="inline-flex items-center bg-white text-gray-800 px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-bold group-hover:bg-gray-100 transition-colors">
-                            {game.id === "asi" || game.id === "bsri" ? t("Start Test", "开始测试") : t("Start Game", "开始游戏")} →
+                            {game.id === "asi" || game.id === "bsri" ? t("Start Assessment", "开始评估") : t("Start Game", "开始游戏")} →
                           </div>
                         </div>
                       </div>

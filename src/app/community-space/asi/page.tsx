@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Link from "next/link";
 import { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 type Question = {
   statement: { en: string; zh: string };
@@ -19,6 +20,11 @@ export default function ASIGame() {
   const [answers, setAnswers] = useState<number[]>([]);
   const [assessmentCompleted, setAssessmentCompleted] = useState(false);
   const [showPrivacyModal, setShowPrivacyModal] = useState(true);
+  const [expandedSections, setExpandedSections] = useState<{[key: string]: boolean}>({
+    definition: false,
+    innovation: false,
+    interpretation: false
+  });
 
   // English version: 22 questions (original ASI)
   const questionsEN: Question[] = [
@@ -151,7 +157,7 @@ export default function ASIGame() {
     {
       statement: {
         en: "Every man ought to have a woman whom he adores.",
-        zh: "每个男人都应该有一个他所崇拜的女人。"
+        zh: "每个男性都应该有一个他所崇拜的女性。"
       },
       reversed: false
     },
@@ -165,7 +171,7 @@ export default function ASIGame() {
     {
       statement: {
         en: "No matter how accomplished he is, a man is not truly complete as a person unless he has the love of a woman.",
-        zh: "无论他多么有成就，一个男人如果没有女人的爱，就不是真正完整的人。"
+        zh: "无论他多么有成就，一个男性如果没有女性的爱，就不是真正完整的人。"
       },
       reversed: false
     },
@@ -183,7 +189,7 @@ export default function ASIGame() {
     {
       statement: {
         en: "Women exaggerate problems they have at work.",
-        zh: "女性在工作中的问题常被夸大。"
+        zh: "女性在工作中的问题常被夸大其词。"
       },
       reversed: false
     },
@@ -197,7 +203,7 @@ export default function ASIGame() {
     {
       statement: {
         en: "Most women interpret innocent remarks as being sexist.",
-        zh: "多数女性把无伤大雅的言论都解读为性别歧视。"
+        zh: "多数女性把无辜的言论都解读为性别歧视。"
       },
       reversed: false
     },
@@ -218,42 +224,42 @@ export default function ASIGame() {
     {
       statement: {
         en: "Women seek power by getting control over men.",
-        zh: "女性通过掌控男性来寻求权力。"
+        zh: "女性通过控制男性来寻求权力。"
       },
       reversed: false
     },
     {
       statement: {
         en: "Once a woman gets a man to commit to her, she usually tries to put him on a tight leash.",
-        zh: "一旦让男人与她承诺，女人通常会把男人拴得很紧。"
+        zh: "一旦让男性对她承诺，女性通常会把他拴得很紧。"
       },
       reversed: false
     },
     {
       statement: {
         en: "Most women fail to appreciate all that men do for them.",
-        zh: "大多数女性不懂得感激男人为她们所做的一切。"
+        zh: "大多数女性不懂得感激男性为她们所做的一切。"
       },
       reversed: false
     },
     {
       statement: {
         en: "A good woman should be set on a pedestal by her man.",
-        zh: "好女人应当被她的男人捧在神坛上。"
+        zh: "好女性应当被男性捧在神坛上。"
       },
       reversed: false
     },
     {
       statement: {
         en: "Women should be cherished and protected by men.",
-        zh: "男人应当珍爱并保护女人。"
+        zh: "男性应当珍爱并保护女性。"
       },
       reversed: false
     },
     {
       statement: {
         en: "Men should be willing to sacrifice their own well-being in order to provide financially for the women in their lives.",
-        zh: "男人应该愿意为供养生活中的女人而牺牲自身福祉。"
+        zh: "男性应该愿意为供养生活中的女性而牺牲自身福祉。"
       },
       reversed: false
     },
@@ -267,28 +273,28 @@ export default function ASIGame() {
     {
       statement: {
         en: "Many women have a quality of purity that few men possess.",
-        zh: "许多女性拥有少有男人具备的纯洁品质。"
+        zh: "许多女性拥有少有男性具备的纯洁品质。"
       },
       reversed: false
     },
     {
       statement: {
         en: "Women, as compared to men, tend to have a more refined sense of culture and good taste.",
-        zh: "女性通常对文化与品味更为精致。"
+        zh: "与男性相比，女性通常对文化与品味更具精致感。"
       },
       reversed: false
     },
     {
       statement: {
         en: "Every man ought to have a woman whom he adores.",
-        zh: "每个男人都该有一个他所崇敬的女人。"
+        zh: "每个男性都该有一个他所崇敬的女性。"
       },
       reversed: false
     },
     {
       statement: {
         en: "No matter how accomplished he is, a man is not truly complete as a person unless he has the love of a woman.",
-        zh: "无论多么成功，男人没有女人的爱就不算真正圆满。"
+        zh: "无论多么成功，男性没有女性的爱就不算真正圆满。"
       },
       reversed: false
     }
@@ -335,12 +341,47 @@ export default function ASIGame() {
     return percentage;
   };
 
+  const calculateHSandBS = () => {
+    // Use answers.length instead of questions.length to handle language switching
+    const halfLength = Math.floor(answers.length / 2);
+    let hsScore = 0;
+    let bsScore = 0;
+
+    // Need to use the original questions that were answered
+    // For English: 22 questions, For Chinese: 16 questions
+    const originalQuestions = answers.length === 22 ? questionsEN : questionsZH;
+
+    answers.forEach((answer, index) => {
+      const question = originalQuestions[index];
+      // Safety check: ensure question exists
+      if (!question) return;
+      
+      const scoreValue = question.reversed ? answer : (6 - answer);
+      
+      if (index < halfLength) {
+        // First half is HS (Hostile Sexism)
+        hsScore += scoreValue;
+      } else {
+        // Second half is BS (Benevolent Sexism)
+        bsScore += scoreValue;
+      }
+    });
+
+    const hsPercentage = (hsScore / (halfLength * 5)) * 100;
+    const bsPercentage = (bsScore / (halfLength * 5)) * 100;
+
+    return {
+      hs: Math.round(hsPercentage),
+      bs: Math.round(bsPercentage)
+    };
+  };
+
   const getResult = () => {
     const score = calculateScore();
 
     if (score >= 75) {
       return {
-        level: t("Low Sexism", "性别偏见较低"),
+        level: t("Low Ambivalence", "矛盾性较低"),
         emoji: "🟢",
         color: "text-green-600",
         bg: "bg-green-50",
@@ -352,7 +393,7 @@ export default function ASIGame() {
       };
     } else if (score >= 50) {
       return {
-        level: t("Moderate Sexism", "性别偏见中等"),
+        level: t("Moderate Ambivalence", "矛盾性中等"),
         emoji: "🟡",
         color: "text-yellow-600",
         bg: "bg-yellow-50",
@@ -364,7 +405,7 @@ export default function ASIGame() {
       };
     } else {
       return {
-        level: t("High Sexism", "性别偏见较高"),
+        level: t("High Ambivalence", "矛盾性较高"),
         emoji: "🔴",
         color: "text-red-600",
         bg: "bg-red-50",
@@ -386,13 +427,14 @@ export default function ASIGame() {
             userLevel === "top" ? "bg-green-500 shadow-lg scale-110" : "bg-green-300"
           }`}>
             <div className="text-center">
-              <div className="text-xs">{t("Low Sexism", "性别偏见较低")}</div>
+              <div className="text-xs">{t("Low Ambivalence", "矛盾性低")}</div>
               <div className="text-xs">75-100%</div>
             </div>
           </div>
           {userLevel === "top" && (
-            <div className="absolute left-full ml-4 top-4 text-xl font-bold text-green-600 whitespace-nowrap">
-              ⬅ {t("You are here", "你在这里")}
+            <div className="absolute left-full ml-2 sm:ml-4 top-4 text-base sm:text-xl font-bold text-green-600 whitespace-nowrap">
+              <span className="hidden sm:inline">⬅ {t("You are here", "你在这里")}</span>
+              <span className="sm:hidden">⬅</span>
             </div>
           )}
           
@@ -401,12 +443,13 @@ export default function ASIGame() {
             userLevel === "middle" ? "bg-yellow-500 shadow-lg scale-110" : "bg-yellow-300"
           }`}>
             <div className="text-center">
-              <div className="text-xs">{t("Moderate Sexism", "性别偏见中等")}</div>
+              <div className="text-xs">{t("Moderate Ambivalence", "矛盾性中等")}</div>
               <div className="text-xs">50-74%</div>
             </div>
             {userLevel === "middle" && (
-              <div className="absolute left-full ml-4 text-xl font-bold text-yellow-600 whitespace-nowrap">
-                ⬅ {t("You are here", "你在这里")}
+              <div className="absolute left-full ml-2 sm:ml-4 text-base sm:text-xl font-bold text-yellow-600 whitespace-nowrap">
+                <span className="hidden sm:inline">⬅ {t("You are here", "你在这里")}</span>
+                <span className="sm:hidden">⬅</span>
               </div>
             )}
           </div>
@@ -416,18 +459,26 @@ export default function ASIGame() {
             userLevel === "bottom" ? "bg-red-500 shadow-lg scale-110" : "bg-red-300"
           }`}>
             <div className="text-center">
-              <div className="text-xs">{t("High Sexism", "性别偏见较高")}</div>
+              <div className="text-xs">{t("High Ambivalence", "矛盾性高")}</div>
               <div className="text-xs">0-49%</div>
             </div>
             {userLevel === "bottom" && (
-              <div className="absolute left-full ml-4 text-xl font-bold text-red-600 whitespace-nowrap">
-                ⬅ {t("You are here", "你在这里")}
+              <div className="absolute left-full ml-2 sm:ml-4 text-base sm:text-xl font-bold text-red-600 whitespace-nowrap">
+                <span className="hidden sm:inline">⬅ {t("You are here", "你在这里")}</span>
+                <span className="sm:hidden">⬅</span>
               </div>
             )}
           </div>
         </div>
       </div>
     );
+  };
+
+  const toggleSection = (section: string) => {
+    setExpandedSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
   };
 
   const restart = () => {
@@ -504,17 +555,17 @@ export default function ASIGame() {
           </Link>
           <span className="mx-2">&gt;&gt;</span>
           <span className="font-semibold text-black">
-            {language === "en" ? "ASI Assessment" : "矛盾性别偏见自测"}
+            {language === "en" ? "ASI Self-Assessment" : "矛盾性别偏见自测"}
           </span>
         </div>
 
         <AnimatedSection>
           <div className="text-center mb-12">
             <h1 className="text-3xl sm:text-6xl font-black mb-4">
-              {t("Ambivalent Sexism Inventory", "矛盾性别偏见自测")}
+              {t("Ambivalent Sexism Inventory (ASI)", "矛盾性别偏见自测")}
             </h1>
             <p className="text-base sm:text-xl text-gray-700">
-              {t("Self-reflection on gender attitudes", "性别态度自我反思")}
+              {t("A Self-Reflection on Gender Attitudes", "对性别态度的自我反思")}
             </p>
           </div>
 
@@ -530,7 +581,7 @@ export default function ASIGame() {
               <p className="text-xs text-gray-500">
                 {language === "en" 
                   ? "Chinese 16-item version references domestic localization and simplification research practices (HS/BS 8 items each, unidirectional scoring)."
-                  : "中文16题简版参考了国内本土化与简化研究实践（HS/BS各8项，同向计分）。"
+                  : "中文16题简版参考了国内本土化和简化研究实践（HS/BS各8项，同向计分）。"
                 }
               </p>
             </div>
@@ -545,19 +596,19 @@ export default function ASIGame() {
               <div className="space-y-2 text-sm text-blue-700">
                 <p>
                   {language === "en" 
-                    ? "ASI English: Using original 22 questions (including reverse scoring)"
-                    : "ASI英文：采用原版22题（含反向计分）"
+                    ? "ASI English: Uses original 22 items (including reverse scoring)"
+                    : "ASI英文：采用原版22题项（含反向计分）"
                   }
                 </p>
                 <p>
                   {language === "en" 
-                    ? "ASI Chinese: Using 16 questions validated by domestic researchers (unidirectional scoring)"
-                    : "ASI中文：采用国内研究者验证过的16题同向版"
+                    ? "ASI Chinese: Uses 16 questions validated by domestic researchers (unidirectional scoring)"
+                    : "ASI中文：采用国内研究者验证过的16题项同向版"
                   }
                 </p>
                 <p className="text-xs italic">
                   {language === "en" 
-                    ? "The two versions cannot be directly compared item by item, but both can be used for self-reflection."
+                    ? "The two versions cannot be directly compared item-by-item, but both can be used for self-reflection."
                     : "两版不可直接逐项对比，但都能用于自我反思。"
                   }
                 </p>
@@ -647,30 +698,222 @@ export default function ASIGame() {
               {/* Pyramid Visualization */}
               <PyramidVisualization userLevel={getResult().pyramidLevel} />
 
-              <div className={`p-6 rounded-lg ${getResult().bg} mb-8`}>
-                <h3 className="text-xl font-bold mb-4">{t("Your Responses & Insights", "你的回答与见解")}</h3>
+              {/* HS and BS Scores */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                {(() => {
+                  const scores = calculateHSandBS();
+                  return [
+                    {
+                      title: language === "en" ? "Hostile Sexism (HS)" : "敌意性别偏见 (HS)",
+                      score: scores.hs,
+                      description: language === "en" 
+                        ? "Overt negative attitudes" 
+                        : "对女性的公开负面态度",
+                      color: "bg-red-50 text-red-600 border-red-200"
+                    },
+                    {
+                      title: language === "en" ? "Benevolent Sexism (BS)" : "善意性别偏见 (BS)",
+                      score: scores.bs,
+                      description: language === "en" 
+                        ? "Patronizing attitudes" 
+                        : "看似积极但带有施恩态度",
+                      color: "bg-green-50 text-green-600 border-green-200"
+                    }
+                  ].map((item, index) => (
+                    <div key={index} className={`p-3 rounded-lg border-2 ${item.color} h-20 flex items-center justify-center`}>
+                      <div className="text-center">
+                        <h3 className="text-sm font-bold mb-1">{item.title}</h3>
+                        <p className="text-2xl font-black">{item.score}%</p>
+                      </div>
+                    </div>
+                  ));
+                })()}
+              </div>
+
+              <div className="p-6 rounded-lg bg-blue-50 border-2 border-blue-200 mb-8">
+                <h3 className="text-xl font-bold mb-4 text-[#00357a]">{t("Your Responses", "你的回答")}</h3>
                 <div className="space-y-4 max-h-96 overflow-y-auto">
-                  {questions.map((q, index) => (
+                  {questions.map((q, index) => {
+                    const answerValue = answers[index];
+                    let answerText = "";
+                    
+                    if (language === "zh") {
+                      // Chinese version uses 1-5 scale
+                      const zhLabels = ["非常不同意", "不同意", "中立", "同意", "非常同意"];
+                      // If answer is 0-5 (from English), map it to 1-5
+                      if (answerValue === 0) {
+                        answerText = zhLabels[0]; // 0 -> 非常不同意
+                      } else if (answerValue >= 1 && answerValue <= 5) {
+                        answerText = zhLabels[answerValue - 1];
+                      }
+                    } else {
+                      // English version uses 0-5 scale
+                      const enLabels = ["Strongly Disagree", "Disagree", "Slightly Disagree", "Slightly Agree", "Agree", "Strongly Agree"];
+                      if (answerValue >= 0 && answerValue <= 5) {
+                        answerText = enLabels[answerValue];
+                      }
+                    }
+                    
+                    return (
                     <div key={index} className="bg-white p-4 rounded-lg">
                       <p className="font-semibold mb-2">{q.statement[language]}</p>
                       <p className="text-sm text-gray-600 mb-2">
-                        {t("Your answer", "你的回答")}: {
-                          language === "zh" 
-                            ? ["", "非常不同意", "不同意", "中立", "同意", "非常同意"][answers[index]]
-                            : ["Strongly Disagree", "Disagree", "Slightly Disagree", "Slightly Agree", "Agree", "Strongly Agree"][answers[index]]
-                        }
-                      </p>
-                    </div>
-                  ))}
+                          {t("Your answer", "你的回答")}: {answerText}
+                        </p>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button onClick={restart} className="bg-[#00357a] hover:bg-[#004a9e] text-white px-8 py-6 text-lg font-bold">
+              {/* Collapsible Information Panels */}
+              <div className="mt-12 space-y-4">
+                {/* Section 1: ASI Definition */}
+                <div className="border-2 border-blue-100 rounded-lg overflow-hidden">
+                  <button
+                    onClick={() => toggleSection('definition')}
+                    className="w-full px-6 py-4 bg-blue-50 hover:bg-blue-100 transition-colors flex justify-between items-center text-left"
+                  >
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {language === "en" ? "I. Definition of Ambivalent Sexism" : "一、矛盾性别偏见定义"}
+                    </h3>
+                    {expandedSections.definition ? (
+                      <ChevronUp className="w-6 h-6 text-[#00357a]" />
+                    ) : (
+                      <ChevronDown className="w-6 h-6 text-[#00357a]" />
+                    )}
+                  </button>
+                  {expandedSections.definition && (
+                    <div className="px-6 py-6 bg-white animate-in slide-in-from-top duration-300">
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        {language === "en"
+                          ? "The Ambivalent Sexism Inventory (ASI) model posits that sexism is not a unitary, overtly negative attitude but is composed of two inter-related dimensions: Hostile Sexism (HS) and Benevolent Sexism (BS)."
+                          : "矛盾性别偏见模型（ASI）认为，性别偏见不再是单一的、公开的负面态度，而是由敌意性别偏见（Hostile Sexism, HS）和善意性别偏见（Benevolent Sexism, BS）这两种相互关联的维度组成。"
+                        }
+                      </p>
+                      <p className="text-gray-700 leading-relaxed">
+                        {language === "en"
+                          ? "HS involves overt negative stereotypes and hostility towards women; BS manifests as seemingly positive attitudes (e.g., viewing women as pure, fragile, or deserving of protection) but essentially functions to maintain traditional gender hierarchy and restrict women's autonomy."
+                          : "HS 涉及对女性的公开蔑视和负面刻板印象；BS 则表现为看似积极的态度（例如，认为女性纯洁、脆弱、或值得保护），但本质上是为了维护传统的性别等级制度并限制女性的自主权。"
+                        }
+                      </p>
+                    </div>
+                  )}
+                </div>
+
+                {/* Section 2: ASI Genesis and Innovation */}
+                <div className="border-2 border-blue-100 rounded-lg overflow-hidden">
+                  <button
+                    onClick={() => toggleSection('innovation')}
+                    className="w-full px-6 py-4 bg-blue-50 hover:bg-blue-100 transition-colors flex justify-between items-center text-left"
+                  >
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {language === "en" ? "II. ASI's Genesis and Innovation" : "二、ASI 量表的诞生与创新"}
+                    </h3>
+                    {expandedSections.innovation ? (
+                      <ChevronUp className="w-6 h-6 text-[#00357a]" />
+                    ) : (
+                      <ChevronDown className="w-6 h-6 text-[#00357a]" />
+                    )}
+                  </button>
+                  {expandedSections.innovation && (
+                    <div className="px-6 py-6 bg-white animate-in slide-in-from-top duration-300">
+                      <div className="space-y-4">
+                        <div>
+                          <p className="font-bold text-lg mb-2">
+                            {language === "en" ? "Context and Purpose:" : "时代背景与制定目的："}
+                          </p>
+                          <p className="text-gray-700 leading-relaxed">
+                            {language === "en"
+                              ? "The ASI was developed by Glick and Fiske in 1996 to address the limitations of traditional sexism measures. As social tolerance for overt prejudice (like misogyny) decreased, researchers needed a tool capable of capturing subtle and socially accepted forms of bias."
+                              : "ASI 由 Glick 和 Fiske 于 1996 年提出，旨在解决传统性别歧视测量工具的局限性。随着社会对公开性别歧视（如厌恶女性）的容忍度降低，研究者需要一种能捕捉微妙的、社会认可的偏见形式的工具。"
+                            }
+                          </p>
+                        </div>
+                        <div>
+                          <p className="font-bold text-lg mb-2">
+                            {language === "en" ? "Innovation and Target:" : "创新点与测量目标："}
+                          </p>
+                          <p className="text-gray-700 leading-relaxed">
+                            {language === "en"
+                              ? "The ASI's innovation lies in introducing Benevolent Sexism (BS), revealing the \"carrot and stick\" nature of prejudice. BS is a rewarding, romantically-tinged bias that justifies male dominance by placing women \"on a pedestal,\" allowing the bias-holder to feel like a \"good person.\""
+                              : "ASI 的创新在于将善意性别偏见（BS）引入量表，从而揭示了偏见的\“矛与盾\”。BS 是一种奖赏性的、充满浪漫色彩的偏见，通过将女性置于\“神坛之上\”，来合理化男性支配地位，同时让偏见持有者感觉自己是\"好的\"。"
+                            }
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Section 3: Interpretation and Theoretical Significance */}
+                <div className="border-2 border-blue-100 rounded-lg overflow-hidden">
+                  <button
+                    onClick={() => toggleSection('interpretation')}
+                    className="w-full px-6 py-4 bg-blue-50 hover:bg-blue-100 transition-colors flex justify-between items-center text-left"
+                  >
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {language === "en" ? "III. Results Interpretation and Theoretical Significance" : "三、结果解读与理论意义"}
+                    </h3>
+                    {expandedSections.interpretation ? (
+                      <ChevronUp className="w-6 h-6 text-[#00357a]" />
+                    ) : (
+                      <ChevronDown className="w-6 h-6 text-[#00357a]" />
+                    )}
+                  </button>
+                  {expandedSections.interpretation && (
+                    <div className="px-6 py-6 bg-white animate-in slide-in-from-top duration-300">
+                      <div className="space-y-4">
+                        <div>
+                          <p className="font-bold text-lg mb-2">
+                            {language === "en" ? "Total Score Significance:" : "总分意义："}
+                          </p>
+                          <p className="text-gray-700 leading-relaxed">
+                            {language === "en"
+                              ? "Your total score reflects the overall intensity of ambivalence. A higher score (higher percentage) indicates lower endorsement of both forms of bias and stronger pro-equality attitudes."
+                              : "您的总分反映了矛盾性总强度。总分越高（百分比越高），表明您对这两种偏见的认同度越低，性别平等态度越强。"
+                            }
+                          </p>
+                        </div>
+                        <div>
+                          <p className="font-bold text-lg mb-2">
+                            {language === "en" ? "Implications of High Ambivalence:" : "高矛盾性的影响："}
+                          </p>
+                          <p className="text-gray-700 leading-relaxed">
+                            {language === "en"
+                              ? "Individuals with high endorsement of both HS and BS display greater resistance to change. Benevolent Sexism tends to undermine women's awareness of inequality and resistance by offering the \"reward\" of being protected and idealized."
+                              : "对 HS 和 BS 均持高认同度的个体，其偏见具有更高的抵抗力。善意偏见往往能削弱女性对性别不平等的感知和反抗意愿，因为它提供了被保护、被理想化的\“奖励\”。"
+                            }
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Section 4: Conclusion - Independent Card (Always Visible) */}
+              <div className="mt-8 border-4 border-[#00357a] rounded-lg bg-gradient-to-br from-blue-50 to-white p-8 shadow-lg">
+                <h3 className="text-2xl font-black text-[#00357a] mb-6">
+                  {language === "en" ? "Conclusion" : "总结"}
+                </h3>
+                <p className="text-lg leading-relaxed text-gray-700">
+                  <span className="font-bold text-gray-900">
+                    {language === "en" ? "Reflection and Empowerment: " : "反思与赋能："}
+                  </span>
+                  {language === "en"
+                    ? "The purpose of this assessment is to offer a starting point for critical self-reflection. Pay particular attention to your Benevolent Sexism (BS) score, as this category of bias is the most subtle and easily overlooked."
+                    : "本自测的目的是提供一个批判性反思的起点。请特别关注善意性别偏见（BS）的分数，因为这类偏见最隐蔽，也最容易被忽略。"
+                  }
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <Button onClick={restart} className="bg-[#00357a] hover:bg-[#004a9e] text-white px-8 py-6 text-lg font-bold w-full sm:w-auto">
                   {t("Retake Assessment", "重新测评")}
                 </Button>
-                <Link href="/community-space">
-                  <Button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-6 text-lg font-bold">
+                <Link href="/community-space" className="w-full sm:w-auto">
+                  <Button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-6 text-lg font-bold w-full">
                     {t("Try Other Games", "尝试其他游戏")}
                   </Button>
                 </Link>

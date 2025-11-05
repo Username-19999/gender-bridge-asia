@@ -26,7 +26,7 @@ export default function MatchGame() {
   const allTerms: TermPair[] = [
     {
       term: { en: "Toxic Masculinity", zh: "有毒男性气质" },
-      definition: { en: "A pattern of masculinity that suppresses emotions and emphasizes dominance and toughness", zh: "一种压抑情绪、强调支配和强硬的男性气质模式" }
+      definition: { en: "A pattern of masculinity that suppresses emotions and emphasizes dominance and toughness", zh: "压抑情绪、强调支配和强硬的男性气质模式" }
     },
     {
       term: { en: "Gender Mainstreaming", zh: "性别主流化" },
@@ -34,15 +34,15 @@ export default function MatchGame() {
     },
     {
       term: { en: "Intersectionality", zh: "交叉性" },
-      definition: { en: "The interconnected nature of social categorizations creating overlapping systems of discrimination", zh: "社会分类的相互关联性质，创造重叠的歧视系统" }
+      definition: { en: "The interconnected nature of social categorizations creating overlapping systems of discrimination", zh: "社会分类的相互交织性，创造重叠的歧视或优势系统" }
     },
     {
       term: { en: "Glass Ceiling", zh: "玻璃天花板" },
-      definition: { en: "Invisible barrier preventing women and minorities from advancing to top positions", zh: "阻止女性和少数群体晋升至高层的无形障碍" }
+      definition: { en: "Invisible barrier preventing women and minorities from advancing to top positions", zh: "阻止女性和少数族裔/边缘群体晋升至高层的无形障碍" }
     },
     {
       term: { en: "Patriarchy", zh: "父权制" },
-      definition: { en: "A social system where men hold primary power and dominate leadership roles", zh: "男性掌握主要权力并主导领导角色的社会系统" }
+      definition: { en: "A social system where men hold primary power and dominate leadership roles", zh: "男性掌握主要权力并主导领导地位的社会系统" }
     },
     {
       term: { en: "Gender Binary", zh: "性别二元论" },
@@ -58,7 +58,7 @@ export default function MatchGame() {
     },
     {
       term: { en: "Misogyny", zh: "厌女症" },
-      definition: { en: "Hatred of, aversion to, or prejudice against women", zh: "对女性的仇恨、厌恶或偏见" }
+      definition: { en: "Hatred of, aversion to, or prejudice against women", zh: "对女性的厌恶、蔑视或偏见" }
     },
     {
       term: { en: "Gender Expression", zh: "性别表达" },
@@ -66,7 +66,7 @@ export default function MatchGame() {
     },
     {
       term: { en: "Patrilineal Descent", zh: "父系继嗣" },
-      definition: { en: "A kinship system where inheritance and family identity pass through the father's line", zh: "以父系血缘为核心来确立个体宗族身份与继承权的亲属制度" }
+      definition: { en: "A kinship system where inheritance and family identity pass through the father's line", zh: "以父系血缘为核心来确立个体亲属身份与继承权的亲属制度" }
     },
     {
       term: { en: "Patrilocal Residence", zh: "从夫居" },
@@ -74,7 +74,7 @@ export default function MatchGame() {
     },
     {
       term: { en: "Population Statistics Yearbook", zh: "人口统计年鉴" },
-      definition: { en: "Official annual publication compiling population and related socioeconomic statistics", zh: "官方年度出版物，系统汇编并发布人口与相关社会经济统计指标的数据集" }
+      definition: { en: "Official annual publication compiling population and related socioeconomic statistics", zh: "官方年度出版物，系统汇编人口与相关社会经济统计指标的数据集" }
     },
     {
       term: { en: "Population Sample Survey", zh: "人口抽样调查" },
@@ -97,7 +97,7 @@ export default function MatchGame() {
       definition: { en: "Statistical description of the proportion of different genders in a population", zh: "群体中不同性别个体所占比例的统计描述" }
     },
     {
-      term: { en: "Sex Ratio at Birth (SRB)", zh: "出生性别比" },
+      term: { en: "Sex Ratio at Birth (SRB)", zh: "出生性别比(SRB)" },
       definition: { en: "The numerical ratio of male to female births, typically expressed as males per 100 females", zh: "活产婴儿中男性对女性的数值比，常以每百名女性对应的男性数表示" }
     },
     {
@@ -122,7 +122,7 @@ export default function MatchGame() {
     },
     {
       term: { en: "Sex Structure", zh: "性别结构" },
-      definition: { en: "The composition of different genders in terms of quantity and age distribution within a population", zh: "一个人口群体内部不同性别在数量与年龄层次上的构成形态" }
+      definition: { en: "The composition of different genders in terms of quantity and age distribution within a population", zh: "一个人口群体内部不同性别在数量与年分布上的构成形态" }
     },
     {
       term: { en: "Sex-Selective Induced Abortion", zh: "性别选择性人工流产" },
@@ -194,11 +194,11 @@ export default function MatchGame() {
     },
     {
       term: { en: "Feticide", zh: "堕杀胎儿" },
-      definition: { en: "Causing fetal death through medical or illegal means before fetus becomes viable", zh: "在胎儿可存活前通过医疗或非法手段导致其死亡的行为（不指明性别动机）" }
+      definition: { en: "Causing fetal death through medical or illegal means before fetus becomes viable", zh: "在胎儿可存活前通过医疗或非法手段导致其死亡的行为" }
     },
     {
       term: { en: "Gender Asymmetry", zh: "男女不均衡" },
-      definition: { en: "Systematic differences in power, status and resources based on gender", zh: "在权力、地位与资源等方面因性别产生的系统性差异" }
+      definition: { en: "Systematic differences in power, status and resources based on gender", zh: "在权力、地位与资源等方面因性别产生的系统性不均衡" }
     },
     {
       term: { en: "Patriarchy", zh: "父权制" },
@@ -206,7 +206,7 @@ export default function MatchGame() {
     },
     {
       term: { en: "Hegemonic Masculinity", zh: "支配性男性气质" },
-      definition: { en: "Dominant masculinity pattern naturalized and legitimizing male advantage in specific social-historical contexts", zh: "在特定社会历史情境中被自然化并 legitimize 男性优势的主导男性气质模式" }
+      definition: { en: "Dominant masculinity pattern naturalized and legitimizing male advantage in specific social-historical contexts", zh: "在特定社会历史情境中被自然化并使男性优势合法化的主导男性气质模式" }
     },
     {
       term: { en: "Masculinity", zh: "男性气质" },
@@ -222,7 +222,7 @@ export default function MatchGame() {
     },
     {
       term: { en: "Paternity Leave", zh: "男性育儿假" },
-      definition: { en: "Paid or unpaid leave time for fathers during child birth or initial care period", zh: "父亲在子女出生或初期照护阶段依法享有的带薪或不带薪离岗时间" }
+      definition: { en: "Paid or unpaid leave time for fathers during child birth or initial care period", zh: "父亲在子女出生或初期照护阶段依法享有的带薪或不带薪假期" }
     }
   ];
 
@@ -249,7 +249,7 @@ export default function MatchGame() {
       "Intersectionality": "A black woman facing discrimination that's different from both white women and black men",
       "交叉性": "黑人女性面临的歧视既不同于白人女性，也不同于黑人男性",
       "Glass Ceiling": "A qualified woman being passed over for CEO position despite excellent performance",
-      "玻璃天花板": "尽管表现优秀，合格女性仍被排除在CEO职位之外",
+      "玻璃天花板": "尽管表现优秀，资深女性仍被排除在CEO职位之外",
       "Patriarchy": "A family where only the father makes major financial decisions",
       "父权制": "只有父亲做重大财务决策的家庭",
       "Gender Binary": "A school bathroom policy that only allows 'male' or 'female' options",
@@ -259,7 +259,7 @@ export default function MatchGame() {
       "Gender Pay Gap": "A female engineer earning 20% less than her male colleague with same qualifications",
       "性别薪酬差距": "同等资历的女性工程师比男性同事少赚20%",
       "Misogyny": "Online comments calling women 'emotional' or 'irrational' in professional settings",
-      "厌女症": "在专业环境中称女性'情绪化'或'不理性'的网络评论",
+      "厌女症": "在专业领域称女性'情绪化'或'不理性'的网络评论",
       "Gender Expression": "A person wearing makeup and dresses regardless of their biological sex",
       "性别表达": "无论生物学性别如何，都化妆穿裙子的人",
       "Patrilineal Descent": "A family where only sons can inherit the family business",
@@ -288,8 +288,8 @@ export default function MatchGame() {
       "分性别的儿童死亡率": "在某些国家，女孩在5岁前死亡比男孩更频繁",
       "Sex Distribution": "A classroom with 15 boys and 20 girls",
       "性别分布": "有15个男孩和20个女孩的教室",
-      "Sex Ratio Imbalance": "A village with 3 men for every woman due to selective abortion",
-      "性别比失衡": "由于选择性流产，村庄中每1个女性对应3个男性",
+      "Sex Ratio Imbalance": "A village with 125 men for every 100 women due to selective abortion",
+      "性别比失衡": "由于选择性流产，村庄中每100个女性对应125个男性",
       "Sex Structure": "A company's workforce is 70% male and 30% female",
       "性别结构": "公司员工70%是男性，30%是女性",
       "Sex Selection": "Using IVF to choose the gender of your baby",
@@ -337,7 +337,7 @@ export default function MatchGame() {
       "Homophobia": "Refusing to hire someone because they're gay",
       "恐同": "因为某人是同性恋而拒绝雇佣",
       "Homosexuality": "A man who falls in love with another man",
-      "同性恋": "爱上另一个男人的男人",
+      "同性恋": "对同一性别的个体产生持续的爱慕或性吸引",
       "Paternity Leave": "Father taking time off work to care for newborn baby",
       "男性育儿假": "父亲请假照顾新生儿"
     };
@@ -430,8 +430,8 @@ export default function MatchGame() {
 
         <AnimatedSection>
           <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("GenderTerms Match", "术语连连看")}</h1>
-            <p className="text-base sm:text-xl text-gray-700">{t("Match each term with its correct definition", "将每个术语与正确的定义连线")}</p>
+            <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Gender Terms Match", "性别术语连连看")}</h1>
+            <p className="text-base sm:text-xl text-gray-700">{t("Match each term with its correct definition.", "将每个性别术语与正确的定义连线。")}</p>
             <p className="text-sm text-gray-600 mt-2">
               {t("Attempts", "尝试次数")}: {attempts} | {t("Matched", "已匹配")}: {matches.size}/{gameTerms.length}
             </p>
@@ -513,11 +513,11 @@ export default function MatchGame() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button onClick={restart} className="bg-[#f97316] hover:bg-[#fb923c] text-white px-8 py-6 text-lg font-bold">
+                <Button onClick={restart} className="bg-[#f97316] hover:bg-[#fb923c] text-white px-8 py-6 text-lg font-bold w-full sm:w-auto">
                   {t("Play Again", "再玩一次")}
                 </Button>
-                <Link href="/community-space">
-                  <Button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-6 text-lg font-bold">
+                <Link href="/community-space" className="w-full sm:w-auto">
+                  <Button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-6 text-lg font-bold w-full">
                     {t("Try Other Games", "尝试其他游戏")}
                   </Button>
                 </Link>

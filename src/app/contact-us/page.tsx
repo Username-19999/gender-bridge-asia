@@ -72,7 +72,7 @@ export default function ContactUs() {
       });
       
       if (response.ok) {
-        alert(t("Thank you for your message! We will get back to you soon.", "感谢您的留言！我们会尽快回复您。"));
+        alert(t("Thank you for your message! We will reply to your inquiry promptly.", "感谢您的留言！我们会尽快回复您的咨询。"));
         setFormData({ name: "", email: "", subject: "", message: "" });
         setValidationErrors({ name: "", email: "", subject: "", message: "" });
       } else {
@@ -94,7 +94,7 @@ export default function ContactUs() {
           <div className="mb-12">
             <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Contact Us", "联系我们")}</h1>
             <p className="text-base sm:text-xl text-gray-600">
-              {t("We'd love to hear from you", "欢迎联系我们，我们期待听到您的声音")}
+              {t("We welcome your inquiries and collaboration proposals.", "我们欢迎您的咨询和合作提议，欢迎联系我们。")}
             </p>
           </div>
 
@@ -169,7 +169,7 @@ export default function ContactUs() {
                 className={`w-full border-2 focus:border-[#00a19a] ${
                   validationErrors.subject ? 'border-red-500' : 'border-gray-300'
                 }`}
-                placeholder={t("What's this about?", "您想咨询的内容")}
+                placeholder={t("What's this about?", "您想咨询的内容/方向")}
               />
               {validationErrors.subject && (
                 <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -193,7 +193,7 @@ export default function ContactUs() {
                 className={`w-full border-2 focus:border-[#00a19a] min-h-[200px] ${
                   validationErrors.message ? 'border-red-500' : 'border-gray-300'
                 }`}
-                placeholder={t("Please describe your question or suggestion...", "请详细描述您的问题或建议...")}
+                placeholder={t("Please describe your question or suggestion...", "请详细描述您的问题或建议")}
               />
               {validationErrors.message && (
                 <p className="text-red-500 text-sm mt-1 flex items-center">
@@ -206,7 +206,7 @@ export default function ContactUs() {
               type="submit"
               className="w-full bg-black text-white hover:bg-gray-800 py-6 text-lg font-bold"
             >
-              {t("Send Message", "发送消息")} →
+              {t("Submit Inquiry", "提交信息")} →
             </Button>
           </form>
         </AnimatedSection>

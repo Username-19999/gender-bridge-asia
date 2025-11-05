@@ -65,7 +65,7 @@ export default function QuizGame() {
     {
       question: {
         en: "Are gender and sex synonymous?",
-        zh: "性别（gender）与生理性别（sex）是同义词吗？"
+        zh: "社会性别（gender）与生理性别（sex）是同义词吗？"
       },
       options: {
         en: ["Yes, they are exactly the same", "No, they are different concepts", "Sometimes the same, sometimes different", "Only the same in certain cultures"],
@@ -74,7 +74,7 @@ export default function QuizGame() {
       correct: 1,
       explanation: {
         en: "Gender refers to socially and culturally constructed roles and expectations, while sex refers to biological characteristics.",
-        zh: "性别（gender）指社会和文化建构的角色和期望，而生理性别（sex）指生物学特征。"
+        zh: "社会性别（gender）指社会和文化建构的角色和期望，而生理性别（sex）指生物学特征。"
       }
     },
     {
@@ -84,7 +84,7 @@ export default function QuizGame() {
       },
       options: {
         en: ["Yes, feminism seeks female superiority", "No, feminism seeks gender equality", "Depends on different schools", "Only in radical feminism"],
-        zh: ["是，女权主义追求女性优于男性", "否，女权主义追求性别平等", "取决于不同流派", "仅在激进女权主义中如此"]
+        zh: ["是，女权主义追求女性优于男性", "否，女权主义追求性别平等", "取决于不同流派", "仅在激进女性主义中如此"]
       },
       correct: 1,
       explanation: {
@@ -114,7 +114,7 @@ export default function QuizGame() {
       },
       options: {
         en: ["Women are better suited for childcare", "Men should not express emotions", "Women are naturally weaker in math", "Individual abilities vary from person to person"],
-        zh: ["女性更适合照顾孩子", "男性不应该表达情感", "女性在数学方面天生较弱", "个体能力因人而异"]
+        zh: ["女性更适合照顾孩子", "男性不应该表达情感", "女性在数学方面天生较弱", "个体能力各有不同"]
       },
       correct: 3,
       explanation: {
@@ -124,8 +124,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What does the '+' in LGBTQ+ represent?",
-        zh: "LGBTQ+中的'+'代表什么？"
+        en: "What does the \"+\" in LGBTQ+ represent?",
+        zh: "LGBTQ+中的"+"代表什么？"
       },
       options: {
         en: ["More sexual minorities", "Supporters", "Additional rights", "Mathematical symbol"],
@@ -133,8 +133,8 @@ export default function QuizGame() {
       },
       correct: 0,
       explanation: {
-        en: "The '+' in LGBTQ+ includes all other sexual and gender minorities, such as asexual, pansexual, intersex, etc.",
-        zh: "LGBTQ+中的'+'包括所有其他性少数和性别少数群体，如无性恋、泛性恋、间性人等。"
+        en: "The \"+\" in LGBTQ+ includes all other sexual and gender minorities, such as asexual, pansexual, intersex, etc.",
+        zh: "LGBTQ+中的"+"包括所有其他性/性别少数群体（Sexual and Gender Minorities, SGM），如无性恋、泛性恋、双性人等。"
       }
     },
     {
@@ -149,13 +149,13 @@ export default function QuizGame() {
       correct: 1,
       explanation: {
         en: "The principle of equal pay for equal work requires that people doing work of equal value should receive equal compensation, regardless of gender.",
-        zh: "同工同酬原则要求从事相同价值工作的人，不论性别，都应获得平等的薪酬。"
+        zh: "同工同酬原则要求从事相同价值工作的人，不论性别，都应获得公平的薪酬。"
       }
     },
     {
       question: {
-        en: "What is the 'glass ceiling'?",
-        zh: "什么是'玻璃天花板'？"
+        en: "What is the \"glass ceiling\"?",
+        zh: '什么是"玻璃天花板"？'
       },
       options: {
         en: ["A type of architectural design", "Invisible barriers preventing women from reaching top positions", "Transparent career development path", "Women-only career channel"],
@@ -174,7 +174,7 @@ export default function QuizGame() {
       },
       options: {
         en: ["Someone with different sexual orientation", "Someone whose gender identity differs from assigned sex at birth", "Someone who wears opposite gender clothing", "Someone after sex reassignment surgery"],
-        zh: ["性取向与众不同的人", "性别认同与出生时指派性别不一致的人", "穿异性服装的人", "变性手术后的人"]
+        zh: ["性取向与众不同的人", "性别认同与出生时指派性别不一致的人", "穿异性服装的人", "完成变性手术后的人"]
       },
       correct: 1,
       explanation: {
@@ -224,13 +224,13 @@ export default function QuizGame() {
       correct: 1,
       explanation: {
         en: "Gender mainstreaming aims to systematically integrate gender perspectives into all areas of policy-making and implementation.",
-        zh: "性别主流化旨在将性别视角系统地纳入政策制定和实施的各个领域。"
+        zh: "性别主流化旨在将性别视角系统地纳入政策制定和实施领域。"
       }
     },
     {
       question: {
-        en: "What does 'patriarchy' refer to in gender studies?",
-        zh: "在性别研究中，'父权制'指的是什么？"
+        en: "What does \"patriarchy\" refer to in gender studies?",
+        zh: '在性别研究中，"父权制"指的是什么？'
       },
       options: {
         en: ["A type of government system", "A social system where men hold primary power", "A family structure", "A religious practice"],
@@ -239,13 +239,13 @@ export default function QuizGame() {
       correct: 1,
       explanation: {
         en: "Patriarchy is a social system where men hold primary power and dominate in roles of political leadership, moral authority, and social privilege.",
-        zh: "父权制是一种社会制度，男性在其中掌握主要权力，在政治领导、道德权威和社会特权方面占主导地位。"
+        zh: "父权制是一种社会制度，男性在其中掌握主要权力，并在政治领导、道德权威和社会特权等领域占主导地位。"
       }
     },
     {
       question: {
-        en: "What is 'reproductive rights'?",
-        zh: "什么是'生育权'？"
+        en: "What is \"reproductive rights\"?",
+        zh: '什么是"生育权"？'
       },
       options: {
         en: ["Only women's rights", "Rights relating to reproduction and reproductive health", "Rights to have children", "Medical treatment rights"],
@@ -259,8 +259,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'gender expression'?",
-        zh: "什么是'性别表达'？"
+        en: "What is \"gender expression\"?",
+        zh: '什么是"性别表达"？'
       },
       options: {
         en: ["Internal gender identity", "External manifestations of gender through appearance and behavior", "Sexual orientation", "Biological sex characteristics"],
@@ -269,28 +269,28 @@ export default function QuizGame() {
       correct: 1,
       explanation: {
         en: "Gender expression refers to how individuals present their gender to others through clothing, behavior, and personal appearance.",
-        zh: "性别表达指个人通过服装、行为和个人外表向他人展现其性别的方式。"
+        zh: "性别表达指个人通过服装、行为和外表向他人展现其性别的方式。"
       }
     },
     {
       question: {
-        en: "What is 'misogyny'?",
-        zh: "什么是'厌女症'？"
+        en: "What is \"misogyny\"?",
+        zh: '什么是"厌女症"？'
       },
       options: {
-        en: ["Fear of women", "Hatred of, aversion to, or prejudice against women", "Love for women", "Understanding of women"],
-        zh: ["对女性的恐惧", "对女性的仇恨、厌恶或偏见", "对女性的爱", "对女性的理解"]
+        en: ["Fear of women", "Hatred of, contempt for, or prejudice against women", "Love for women", "Understanding of women"],
+        zh: ["对女性的恐惧", "对女性的厌恶、蔑视或偏见", "对女性的爱", "对女性的理解"]
       },
       correct: 1,
       explanation: {
         en: "Misogyny is the hatred of, contempt for, or prejudice against women or girls, manifested in various forms.",
-        zh: "厌女症是对女性或女孩的仇恨、蔑视或偏见，以各种形式表现出来。"
+        zh: "厌女症是对女性或女孩的厌恶、蔑视或偏见，以各种形式表现出来。"
       }
     },
     {
       question: {
-        en: "What does 'gender binary' mean?",
-        zh: "'性别二元论'是什么意思？"
+        en: "What does \"gender binary\" mean?",
+        zh: '"性别二元论"是什么意思？'
       },
       options: {
         en: ["Two types of gender", "The classification of gender into male and female only", "Gender equality", "Gender diversity"],
@@ -304,8 +304,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'hegemonic masculinity'?",
-        zh: "什么是'支配性男性气质'？"
+        en: "What is \"hegemonic masculinity\"?",
+        zh: '什么是"支配性男性气质"？'
       },
       options: {
         en: ["All types of masculinity", "The dominant form of masculinity in society", "Weak masculinity", "Feminine masculinity"],
@@ -319,8 +319,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'homophobia'?",
-        zh: "什么是'恐同'？"
+        en: "What is \"homophobia\"?",
+        zh: '什么是"恐同"？'
       },
       options: {
         en: ["Fear of homosexuals", "Prejudice, fear, or hatred of homosexuality", "Love for homosexuals", "Understanding of homosexuality"],
@@ -334,8 +334,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'paternity leave'?",
-        zh: "什么是'男性育儿假'？"
+        en: "What is \"paternity leave\"?",
+        zh: '什么是"男性育儿假"？'
       },
       options: {
         en: ["Leave for mothers only", "Leave for fathers to care for newborns", "Sick leave", "Vacation leave"],
@@ -349,8 +349,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What does 'patrilineal descent' mean?",
-        zh: "'父系继嗣'是什么意思？"
+        en: "What does \"patrilineal descent\" mean?",
+        zh: '"父系继嗣"是什么意思？'
       },
       options: {
         en: ["Inheritance through mother's line", "Inheritance through father's line", "Equal inheritance", "No inheritance"],
@@ -364,8 +364,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'patrilocal residence'?",
-        zh: "什么是'从夫居'？"
+        en: "What is \"patrilocal residence\"?",
+        zh: '什么是"从夫居"？'
       },
       options: {
         en: ["Living with wife's family", "Living with husband's family", "Living separately", "Living with both families"],
@@ -379,8 +379,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'sex ratio at birth'?",
-        zh: "什么是'出生性别比'？"
+        en: "What is \"sex ratio at birth\"?",
+        zh: '什么是"出生性别比"？'
       },
       options: {
         en: ["Ratio of adults", "Ratio of male to female births", "Ratio of children", "Ratio of elderly"],
@@ -394,8 +394,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'son preference'?",
-        zh: "什么是'重男轻女'？"
+        en: "What is \"son preference\"?",
+        zh: '什么是"重男轻女"？'
       },
       options: {
         en: ["Preferring daughters", "Systematic preference for male offspring", "Equal preference", "No preference"],
@@ -409,8 +409,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'sex-selective abortion'?",
-        zh: "什么是'性别选择性流产'？"
+        en: "What is \"sex-selective abortion\"?",
+        zh: '什么是"性别选择性流产"？'
       },
       options: {
         en: ["Abortion for health reasons", "Abortion based on fetal gender", "Abortion for economic reasons", "Abortion for social reasons"],
@@ -424,8 +424,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'total fertility rate'?",
-        zh: "什么是'总和生育率'？"
+        en: "What is \"total fertility rate\"?",
+        zh: '什么是"总和生育率"？'
       },
       options: {
         en: ["Number of children per family", "Average number of children a woman will have", "Number of births per year", "Population growth rate"],
@@ -439,8 +439,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'demography'?",
-        zh: "什么是'人口学'？"
+        en: "What is \"demography\"?",
+        zh: '什么是"人口学"？'
       },
       options: {
         en: ["Study of democracy", "Study of population statistics", "Study of gender", "Study of society"],
@@ -454,8 +454,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'census'?",
-        zh: "什么是'人口普查'？"
+        en: "What is \"census\"?",
+        zh: '什么是"人口普查"？'
       },
       options: {
         en: ["Sample survey", "Complete count of population", "Opinion poll", "Market research"],
@@ -469,8 +469,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'fertility'?",
-        zh: "什么是'生育率'？"
+        en: "What is \"fertility\"?",
+        zh: '什么是"生育率"？'
       },
       options: {
         en: ["Ability to reproduce", "Number of children born", "Population size", "Age structure"],
@@ -484,8 +484,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'aging' in demographic terms?",
-        zh: "人口学术语中的'老龄化'是什么？"
+        en: "What is \"aging\" in demographic terms?",
+        zh: '人口学术语中的"老龄化"是什么？'
       },
       options: {
         en: ["Getting older", "Increase in proportion of elderly", "Decrease in population", "Migration patterns"],
@@ -499,8 +499,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'age-sex structure'?",
-        zh: "什么是'年龄性别结构'？"
+        en: "What is \"age-sex structure\"?",
+        zh: '什么是"年龄性别结构"？'
       },
       options: {
         en: ["Population by age only", "Population by age and gender", "Population by gender only", "Population by location"],
@@ -514,8 +514,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'child mortality by sex'?",
-        zh: "什么是'分性别的儿童死亡率'？"
+        en: "What is \"child mortality by sex\"?",
+        zh: '什么是"分性别的儿童死亡率"？'
       },
       options: {
         en: ["Death rate of children", "Death rate by gender", "Death rate by age", "Death rate by location"],
@@ -529,8 +529,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'sex distribution'?",
-        zh: "什么是'性别分布'？"
+        en: "What is \"sex distribution\"?",
+        zh: '什么是"性别分布"？'
       },
       options: {
         en: ["Geographic distribution", "Distribution by age", "Proportion of males and females", "Distribution by income"],
@@ -544,8 +544,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'sex ratio imbalance'?",
-        zh: "什么是'性别比失衡'？"
+        en: "What is \"sex ratio imbalance\"?",
+        zh: '什么是"性别比失衡"？'
       },
       options: {
         en: ["Equal sex ratio", "Deviation from normal sex ratio", "High birth rate", "Low birth rate"],
@@ -559,8 +559,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'sex structure'?",
-        zh: "什么是'性别结构'？"
+        en: "What is \"sex structure\"?",
+        zh: '什么是"性别结构"？'
       },
       options: {
         en: ["Physical structure", "Population composition by gender", "Social structure", "Economic structure"],
@@ -574,8 +574,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'sex selection'?",
-        zh: "什么是'性别选择'？"
+        en: "What is \"sex selection\"?",
+        zh: '什么是"性别选择"？'
       },
       options: {
         en: ["Choosing partners", "Choosing child's gender", "Choosing career", "Choosing lifestyle"],
@@ -589,8 +589,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'prenatal sex determination'?",
-        zh: "什么是'产前性别鉴定'？"
+        en: "What is \"prenatal sex determination\"?",
+        zh: '什么是"产前性别鉴定"？'
       },
       options: {
         en: ["Determining sex after birth", "Determining sex before birth", "Determining health", "Determining development"],
@@ -604,8 +604,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'prenatal sex selection'?",
-        zh: "什么是'产前性别选择'？"
+        en: "What is \"prenatal sex selection\"?",
+        zh: '什么是"产前性别选择"？'
       },
       options: {
         en: ["Choosing after birth", "Choosing before birth", "Medical treatment", "Health check"],
@@ -619,8 +619,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'real name registration'?",
-        zh: "什么是'出生人口实名登记'？"
+        en: "What is \"real name registration\"?",
+        zh: '什么是"出生人口实名登记"？'
       },
       options: {
         en: ["Anonymous registration", "Official registration with legal identity", "Temporary registration", "Optional registration"],
@@ -634,8 +634,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'sex ratio by birth order'?",
-        zh: "什么是'分孩次出生性别比'？"
+        en: "What is \"sex ratio by birth order\"?",
+        zh: '什么是"分孩次出生性别比"？'
       },
       options: {
         en: ["Overall sex ratio", "Sex ratio by child's birth order", "Age-specific ratio", "Regional ratio"],
@@ -649,8 +649,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'sex ratio of children under five'?",
-        zh: "什么是'5岁以下儿童性别比'？"
+        en: "What is \"sex ratio of children under five\"?",
+        zh: '什么是"5岁以下儿童性别比"？'
       },
       options: {
         en: ["All age groups", "Children under 5 years", "Adults only", "Elderly only"],
@@ -664,8 +664,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'sex ratio in the general population'?",
-        zh: "什么是'总人口性别比'？"
+        en: "What is \"sex ratio in the general population\"?",
+        zh: '什么是"总人口性别比"？'
       },
       options: {
         en: ["Specific groups only", "Entire population", "Urban only", "Rural only"],
@@ -679,8 +679,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'population sample survey'?",
-        zh: "什么是'人口抽样调查'？"
+        en: "What is \"population sample survey\"?",
+        zh: '什么是"人口抽样调查"？'
       },
       options: {
         en: ["Complete census", "Sample-based survey", "Opinion poll", "Market research"],
@@ -694,8 +694,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'Population Statistics Yearbook'?",
-        zh: "什么是'人口统计年鉴'？"
+        en: "What is \"Population Statistics Yearbook\"?",
+        zh: '什么是"人口统计年鉴"？'
       },
       options: {
         en: ["Monthly report", "Annual compilation of population data", "Weekly update", "Daily statistics"],
@@ -709,8 +709,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'B-ultrasound check'?",
-        zh: "什么是'B超检查'？"
+        en: "What is \"B-ultrasound check\"?",
+        zh: '什么是"B超检查"？'
       },
       options: {
         en: ["Blood test", "Ultrasound examination", "X-ray", "MRI scan"],
@@ -724,8 +724,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'unemployment insurance'?",
-        zh: "什么是'失业保险'？"
+        en: "What is \"unemployment insurance\"?",
+        zh: '什么是"失业保险"？'
       },
       options: {
         en: ["Health insurance", "Social security for unemployed", "Life insurance", "Property insurance"],
@@ -739,8 +739,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'basic medical insurance'?",
-        zh: "什么是'基本医疗保险'？"
+        en: "What is \"basic medical insurance\"?",
+        zh: '什么是"基本医疗保险"？'
       },
       options: {
         en: ["Life insurance", "Health coverage for residents", "Property insurance", "Travel insurance"],
@@ -754,8 +754,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'village regulations and local rules'?",
-        zh: "什么是'村规民约'？"
+        en: "What is \"village regulations and local rules\"?",
+        zh: '什么是"村规民约"？'
       },
       options: {
         en: ["National laws", "Village-level autonomous norms", "International rules", "Corporate policies"],
@@ -769,8 +769,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'arranged and forced marriage'?",
-        zh: "什么是'包办和强迫婚姻'？"
+        en: "What is \"arranged and forced marriage\"?",
+        zh: '什么是"包办和强迫婚姻"？'
       },
       options: {
         en: ["Voluntary marriage", "Marriage without full consent", "Love marriage", "Divorce"],
@@ -784,8 +784,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'common-law marriage'?",
-        zh: "什么是'习惯法婚姻'？"
+        en: "What is \"common-law marriage\"?",
+        zh: '什么是"习惯法婚姻"？'
       },
       options: {
         en: ["Formal marriage", "Informal marriage recognized by law", "Religious marriage", "Temporary marriage"],
@@ -799,8 +799,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'distribution of resources'?",
-        zh: "什么是'资源分配'？"
+        en: "What is \"distribution of resources\"?",
+        zh: '什么是"资源分配"？'
       },
       options: {
         en: ["Resource creation", "Systematic allocation of resources", "Resource destruction", "Resource storage"],
@@ -814,8 +814,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'female infanticide'?",
-        zh: "什么是'溺弃女婴'？"
+        en: "What is \"female infanticide\"?",
+        zh: '什么是"溺弃女婴"？'
       },
       options: {
         en: ["Caring for girls", "Killing or abandoning female infants", "Educating girls", "Protecting girls"],
@@ -829,8 +829,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'feticide'?",
-        zh: "什么是'堕杀胎儿'？"
+        en: "What is \"feticide\"?",
+        zh: '什么是"堕杀胎儿"？'
       },
       options: {
         en: ["Birth", "Causing fetal death", "Prenatal care", "Delivery"],
@@ -844,8 +844,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'gender asymmetry'?",
-        zh: "什么是'男女不均衡'？"
+        en: "What is \"gender asymmetry\"?",
+        zh: '什么是"男女不均衡"？'
       },
       options: {
         en: ["Gender equality", "Systematic gender differences", "Gender similarity", "Gender neutrality"],
@@ -859,8 +859,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'masculinity'?",
-        zh: "什么是'男性气质'？"
+        en: "What is \"masculinity\"?",
+        zh: '什么是"男性气质"？'
       },
       options: {
         en: ["Physical strength", "Cultural expectations for men", "Biological traits", "Economic status"],
@@ -874,8 +874,8 @@ export default function QuizGame() {
     },
     {
       question: {
-        en: "What is 'homosexuality'?",
-        zh: "什么是'同性恋'？"
+        en: "What is \"homosexuality\"?",
+        zh: '什么是"同性恋"？'
       },
       options: {
         en: ["Attraction to opposite sex", "Attraction to same sex", "No attraction", "Attraction to all"],
@@ -924,19 +924,19 @@ export default function QuizGame() {
   const getBadge = () => {
     const percentage = (score / gameQuestions.length) * 100;
     if (percentage < 40) return {
-      title: t("Gender Beginner", "性别初学者"),
+      title: t("Gender Beginner", "性别意识初学者"),
       icon: Sprout,
       color: "text-gray-600",
       bg: "bg-gray-100"
     };
     if (percentage <= 70) return {
-      title: t("Gender Thinker", "性别思考者"),
+      title: t("Gender Thinker", "性别意识思考者"),
       icon: MessageCircle,
       color: "text-[#00a19a]",
       bg: "bg-[#00a19a]/10"
     };
     return {
-      title: t("Gender Scholar", "性别学者"),
+      title: t("Gender Literacy Scholar", "性别素养学者"),
       icon: GraduationCap,
       color: "text-[#d62e39]",
       bg: "bg-[#d62e39]/10"
@@ -968,7 +968,7 @@ export default function QuizGame() {
         <AnimatedSection>
           <div className="text-center mb-12">
             <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Gender Knowledge Quiz", "性别知识测验")}</h1>
-            <p className="text-base sm:text-xl text-gray-700 mb-2">{t("How much do you know about gender?", "你对性别了解多少？")}</p>
+            <p className="text-base sm:text-xl text-gray-700 mb-2">{t("How much do you know about Gender Studies?", "你对性别议题的了解程度如何？")}</p>
             <p className="text-sm sm:text-lg text-gray-600 font-semibold">{t("(Single Choice Questions)", "（单选题）")}</p>
           </div>
 
@@ -1059,11 +1059,11 @@ export default function QuizGame() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button onClick={restartQuiz} className="bg-[#00a19a] hover:bg-[#008c85] text-white px-8 py-6 text-lg font-bold">
+                <Button onClick={restartQuiz} className="bg-[#00a19a] hover:bg-[#008c85] text-white px-8 py-6 text-lg font-bold w-full sm:w-auto">
                   {t("Retake Quiz", "重新测验")}
                 </Button>
-                <Link href="/community-space">
-                  <Button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-6 text-lg font-bold">
+                <Link href="/community-space" className="w-full sm:w-auto">
+                  <Button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-6 text-lg font-bold w-full">
                     {t("Try Other Games", "尝试其他游戏")}
                   </Button>
                 </Link>

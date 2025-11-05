@@ -17,8 +17,8 @@ export default function Home() {
     {
       title: t("Academic Hub", "学术中心"),
       description: t(
-        "Explore cutting-edge research directions in gender studies and regional insights from across East Asian",
-        "探索性别研究的前沿方向，并获取东亚地区的区域洞察。"
+        "Explore cutting-edge research directions in gender studies and regional insights from across East Asia.",
+        "探索性别研究的前沿方向，并获取东亚区域洞察。"
       ),
       link: "/academic-hub",
       gradient: "from-[#f5fbf9] to-[#f5fbf9]", // light mint background
@@ -28,8 +28,8 @@ export default function Home() {
     {
       title: t("Community Space", "社区空间"),
       description: t(
-        "Test your knowledge about gender equality through interactive quizzes and educational games",
-        "通过互动测验和教育游戏测试您的性别平等知识"
+        "Test your knowledge about gender equality through interactive self-assessments and educational tools.",
+        "通过互动工具测试您的性别平等知识"
       ),
       link: "/community-space",
       gradient: "from-[#f5fbf9] to-[#f5fbf9]", // light mint background
@@ -39,8 +39,8 @@ export default function Home() {
     {
       title: t("Action Center", "行动中心"),
       description: t(
-        "Join our initiatives and take meaningful action towards creating a more equitable society",
-        "加入我们的倡议，为创建更加公平的社会采取有意义的行动"
+        "Join our initiatives and take evidence-based action towards creating a more equitable society.",
+        "加入我们的倡议，为创建更加公平的社会采取循证行动"
       ),
       link: "/action-center",
       gradient: "from-[#f5fbf9] to-[#f5fbf9]", // light mint background
@@ -87,14 +87,14 @@ export default function Home() {
                   {language === "en" ? (
                     <>
                       East Asian Gender Bridge transcends boundaries to connect{" "}
-                      <span className="font-semibold text-[#000000] md:font-bold">gender knowledge</span> and{" "}
-                      <span className="font-semibold text-[#000] md:font-bold">local action</span>. We empower individuals to drive{" "}
-                      <span className="font-semibold text-[#000] md:font-bold">equitable and insightful change</span>, fostering{" "}
-                      <span className="font-semibold text-[#000] md:font-bold">understanding and progress</span> across East Asian societies.
+                      <span className="font-semibold text-[#000000] md:font-bold">academic knowledge</span> and{" "}
+                      <span className="font-semibold text-[#000] md:font-bold">local civic action</span>. We empower individuals to drive{" "}
+                      <span className="font-semibold text-[#000] md:font-bold">equitable and evidence-based change</span>, fostering{" "}
+                      <span className="font-semibold text-[#000] md:font-bold">critical understanding and progress</span> across East Asian societies.
                     </>
                   ) : (
                     <>
-                      东亚性别桥梁 跨越界限，连接<span className="font-semibold text-[#2E2E2E]">性别知识</span>与<span className="font-semibold text-[#2E2E2E]">在地行动</span>。我们赋能个体，推动<span className="font-semibold text-[#2E2E2E]">平等且富有洞察力的变革</span>，促进东亚社会的<span className="font-semibold text-[#2E2E2E]">理解与进步</span>。
+                      东亚性别桥梁跨越界限，连接<span className="font-semibold text-[#2E2E2E]">学术洞察</span>与<span className="font-semibold text-[#2E2E2E]">在地公民行动</span>。我们赋能个体，推动<span className="font-semibold text-[#2E2E2E]">平等且循证的变革</span>，促进东亚社会的<span className="font-semibold text-[#2E2E2E]">批判性理解与进步</span>。
                     </>
                   )}
                 </p>
@@ -216,7 +216,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
             <h2 className="text-lg sm:text-3xl lg:text-5xl font-black mb-2 sm:mb-4 lg:mb-6 text-black">{t("Follow Us", "关注我们")}</h2>
-            <p className="text-xs sm:text-base lg:text-xl text-[#333] mb-4 sm:mb-6 lg:mb-8">{t("Join our community and stay connected", "加入我们的社区，保持联系")}</p>
+            <p className="text-xs sm:text-base lg:text-xl text-[#333] mb-4 sm:mb-6 lg:mb-8">{t("Join our community and stay engaged", "加入我们的社区，保持参与")}</p>
 
             <div className="flex justify-center space-x-3 sm:space-x-5 lg:space-x-8">
               <a href="#" className="group" title="Twitter">

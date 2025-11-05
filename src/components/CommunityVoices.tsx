@@ -266,23 +266,23 @@ export function CommunityVoices() {
   const renderSubmissionCard = (submission: Submission) => {
     // Apply consistent hover lift effect for all cards
     return (
-      <Card key={submission.id} className="p-6 transition-all duration-300 bg-white border-0 shadow-sm hover:-translate-y-2 hover:shadow-xl">
+      <Card key={submission.id} className="p-5 transition-all duration-300 bg-white border-0 shadow-sm hover:-translate-y-2 hover:shadow-xl">
         {submission.isSample && (
           <div className="flex justify-end mb-2">
             <span className="text-xs text-gray-500 italic">{t("Sample", "示例")}</span>
           </div>
         )}
         
-        <div className="flex items-center space-x-2 mb-3">
+        <div className="flex items-center space-x-2 mb-2">
           <span className={`px-2 py-1 rounded-full text-xs font-semibold ${getTypeColor(submission.type)}`}>
             {getTypeLabel(submission.type)}
           </span>
         </div>
 
-        <h3 className="text-xl font-bold mb-3 line-clamp-2">{submission.title}</h3>
-        <p className="text-gray-600 text-sm mb-4 line-clamp-2">{submission.content}</p>
+        <h3 className="text-lg font-bold mb-2 line-clamp-2">{submission.title}</h3>
+        <p className="text-gray-600 text-sm mb-3 line-clamp-2">{submission.content}</p>
         
-        <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
+        <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
           <span>{submission.date}</span>
           {submission.author ? (
             <span className="font-semibold text-gray-700">{language === "zh" ? `作者：${submission.author}` : `By ${submission.author}`}</span>
@@ -291,7 +291,7 @@ export function CommunityVoices() {
           )}
         </div>
 
-        <div className="border-t border-gray-200 pt-4">
+        <div className="border-t border-gray-200 pt-3">
           <button className="text-[#00a19a] hover:text-[#008c85] font-semibold text-sm flex items-center transition-colors">
             {t("View Item", "查看详情")} →
           </button>
@@ -304,16 +304,16 @@ export function CommunityVoices() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       {/* Main Title */}
       <div className="mb-12">
-        <h2 className="text-4xl font-black mb-4">{t("Community Voices", "社群之声")}</h2>
-        <p className="text-xl text-gray-600 mb-8">
+        <h2 className="text-3xl sm:text-4xl font-black mb-4">{t("Community Voices", "社群之声")}</h2>
+        <p className="text-lg sm:text-xl text-gray-600 mb-8">
           {t("Diverse perspectives from our community members", "来自社群成员的多元视角")}
         </p>
 
         {/* Submission Entry */}
         <Card className="p-8 bg-gradient-to-r from-[#00a19a]/10 to-[#008c85]/10 border-0 shadow-md">
           <div className="text-center mb-6">
-            <h3 className="text-3xl font-bold mb-3">{t("Contribute Your Voice", "贡献你的声音")}</h3>
-            <p className="text-gray-600 text-lg">
+            <h3 className="text-2xl sm:text-3xl font-bold mb-3">{t("Contribute Your Voice", "贡献你的声音")}</h3>
+            <p className="text-gray-600 text-base sm:text-lg">
               {t("Share your stories, insights, images, or articles about gender awareness and equality.", "分享你关于性别平等和意识的故事、洞见、图片或文章。")}
             </p>
           </div>
@@ -332,10 +332,10 @@ export function CommunityVoices() {
       {/* Editorial Section (署名) */}
       <div className="mb-16">
         <div className="mb-8">
-          <h3 className="text-3xl font-bold mb-2">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-2">
             {t("The Bridge Editorials", "桥梁专栏")}
           </h3>
-          <p className="text-gray-600">
+          <p className="text-base sm:text-lg text-gray-600">
             {t("Dive into evidence-based commentary and thoughtful articles by our community authors.", "深入阅读社群作者基于证据的评论与深度文章。")}
           </p>
         </div>
@@ -347,10 +347,10 @@ export function CommunityVoices() {
       {/* Community Section (匿名) */}
       <div className="mb-16">
         <div className="mb-8">
-          <h3 className="text-3xl font-bold mb-2">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-2">
             {t("Whispers from the Community", "社群心声")}
           </h3>
-          <p className="text-gray-600">
+          <p className="text-base sm:text-lg text-gray-600">
             {t("A safe space for sharing personal experiences, visual stories, and anonymous reflections.", "一个分享个人经验、视觉故事和匿名反思的安全空间。")}
           </p>
         </div>

@@ -34,7 +34,7 @@ export default function BSRIGame() {
       category: "masculine"
     },
     {
-      statement: { en: "Aggressive", zh: "好斗/进取心强" },
+      statement: { en: "Aggressive", zh: "好斗/进取" },
       category: "masculine"
     },
     {
@@ -46,11 +46,11 @@ export default function BSRIGame() {
       category: "masculine"
     },
     {
-      statement: { en: "Assertive", zh: "坚定自信" },
+      statement: { en: "Assertive", zh: "坚定果断" },
       category: "masculine"
     },
     {
-      statement: { en: "Athletic", zh: "运动型/体格健壮" },
+      statement: { en: "Athletic", zh: "运动型" },
       category: "masculine"
     },
     {
@@ -74,11 +74,11 @@ export default function BSRIGame() {
       category: "masculine"
     },
     {
-      statement: { en: "Independent", zh: "独立" },
+      statement: { en: "Independent", zh: "独立自主" },
       category: "masculine"
     },
     {
-      statement: { en: "Individualistic", zh: "强调自我/个人主义" },
+      statement: { en: "Individualistic", zh: "强调自我" },
       category: "masculine"
     },
     {
@@ -86,19 +86,19 @@ export default function BSRIGame() {
       category: "masculine"
     },
     {
-      statement: { en: "Masculine", zh: "男性化/有男子气概" },
+      statement: { en: "Masculine", zh: "具有男子气概" },
       category: "masculine"
     },
     {
-      statement: { en: "Self-reliant", zh: "自立" },
+      statement: { en: "Self-reliant", zh: "自立更生" },
       category: "masculine"
     },
     {
-      statement: { en: "Self-sufficient", zh: "自足/自给自足" },
+      statement: { en: "Self-sufficient", zh: "自给自足" },
       category: "masculine"
     },
     {
-      statement: { en: "Strong personality", zh: "个性强" },
+      statement: { en: "Strong personality", zh: "个性突出" },
       category: "masculine"
     },
     {
@@ -111,15 +111,15 @@ export default function BSRIGame() {
     },
     // Feminine traits (21-40)
     {
-      statement: { en: "Affectionate", zh: "亲切/多情" },
+      statement: { en: "Affectionate", zh: "亲切/有爱心" },
       category: "feminine"
     },
     {
-      statement: { en: "Cheerful", zh: "快活" },
+      statement: { en: "Cheerful", zh: "开朗" },
       category: "feminine"
     },
     {
-      statement: { en: "Childlike", zh: "天真/孩子气" },
+      statement: { en: "Childlike", zh: "天真浪漫" },
       category: "feminine"
     },
     {
@@ -127,7 +127,7 @@ export default function BSRIGame() {
       category: "feminine"
     },
     {
-      statement: { en: "Does not use harsh language", zh: "不说粗话" },
+      statement: { en: "Does not use harsh language", zh: "言语温和" },
       category: "feminine"
     },
     {
@@ -139,7 +139,7 @@ export default function BSRIGame() {
       category: "feminine"
     },
     {
-      statement: { en: "Flatterable", zh: "容易被恭维" },
+      statement: { en: "Flatterable", zh: "易受被恭维" },
       category: "feminine"
     },
     {
@@ -147,7 +147,7 @@ export default function BSRIGame() {
       category: "feminine"
     },
     {
-      statement: { en: "Gullible", zh: "轻信" },
+      statement: { en: "Gullible", zh: "易轻信" },
       category: "feminine"
     },
     {
@@ -171,11 +171,11 @@ export default function BSRIGame() {
       category: "feminine"
     },
     {
-      statement: { en: "Sympathetic", zh: "同情的" },
+      statement: { en: "Sympathetic", zh: "充满同情心" },
       category: "feminine"
     },
     {
-      statement: { en: "Tender", zh: "温和/体贴" },
+      statement: { en: "Tender", zh: "体贴" },
       category: "feminine"
     },
     {
@@ -187,7 +187,7 @@ export default function BSRIGame() {
       category: "feminine"
     },
     {
-      statement: { en: "Yielding", zh: "顺从" },
+      statement: { en: "Yielding", zh: "柔顺" },
       category: "feminine"
     },
     // Neutral traits (41-60)
@@ -196,11 +196,11 @@ export default function BSRIGame() {
       category: "neutral"
     },
     {
-      statement: { en: "Conceited", zh: "自负" },
+      statement: { en: "Conceited", zh: "自负/自大" },
       category: "neutral"
     },
     {
-      statement: { en: "Conscientious", zh: "认真负责" },
+      statement: { en: "Conscientious", zh: "尽责" },
       category: "neutral"
     },
     {
@@ -212,7 +212,7 @@ export default function BSRIGame() {
       category: "neutral"
     },
     {
-      statement: { en: "Happy", zh: "快乐" },
+      statement: { en: "Happy", zh: "心情愉快" },
       category: "neutral"
     },
     {
@@ -228,11 +228,11 @@ export default function BSRIGame() {
       category: "neutral"
     },
     {
-      statement: { en: "Likable", zh: "讨人喜欢" },
+      statement: { en: "Likable", zh: "人缘好" },
       category: "neutral"
     },
     {
-      statement: { en: "Moody", zh: "喜怒无常" },
+      statement: { en: "Moody", zh: "情绪化" },
       category: "neutral"
     },
     {
@@ -252,11 +252,11 @@ export default function BSRIGame() {
       category: "neutral"
     },
     {
-      statement: { en: "Tactful", zh: "老练得体" },
+      statement: { en: "Tactful", zh: "圆滑得体" },
       category: "neutral"
     },
     {
-      statement: { en: "Theatrical", zh: "戏剧化/夸张" },
+      statement: { en: "Theatrical", zh: "行为夸张" },
       category: "neutral"
     },
     {
@@ -268,7 +268,7 @@ export default function BSRIGame() {
       category: "neutral"
     },
     {
-      statement: { en: "Unsystematic", zh: "无条理" },
+      statement: { en: "Unsystematic", zh: "缺乏条理" },
       category: "neutral"
     }
   ];
@@ -476,10 +476,10 @@ export default function BSRIGame() {
         <AnimatedSection>
           <div className="text-center mb-12">
             <h1 className="text-3xl sm:text-6xl font-black mb-4">
-              {t("Gender Role Self-Test", "性别角色自测")}
+              {t("Bem Sex-Role Inventory (BSRI)", "性别角色自测")}
             </h1>
             <p className="text-base sm:text-xl text-gray-700">
-              {t("BSRI Assessment", "BSRI评估")}
+              {t("A BSRI Assessment", "BSRI 自我评估")}
             </p>
           </div>
 
@@ -490,7 +490,7 @@ export default function BSRIGame() {
                 {t("Scale Reference", "量表来源")}
               </h3>
               <p className="text-sm text-gray-600 mb-2">
-                Bem, S. L. (1974/1981). <span className="font-semibold">Bem Sex-Role Inventory.</span>
+                Bem, S. L. (1974/1981). <span className="font-semibold">The Bem Sex-Role Inventory.</span>
               </p>
               <p className="text-xs text-gray-500">
                 {language === "en" 
@@ -510,14 +510,14 @@ export default function BSRIGame() {
               <div className="space-y-2 text-sm text-[#059669]">
                 <p>
                   {language === "en" 
-                    ? "BSRI: Using original 60 questions (20 masculine, 20 feminine, 20 neutral traits)"
-                    : "BSRI：采用原版60题（20个男性化、20个女性化、20个中性特征）"
+                    ? "BSRI: Uses original 60 questions (20 masculine, 20 feminine, 20 neutral traits)"
+                    : "BSRI：采用原版60题项（20个男性化、20个女性化、20个中性特征）"
                   }
                 </p>
                 <p className="text-xs italic">
                   {language === "en" 
                     ? "Both English and Chinese versions use the same 60 questions for consistency."
-                    : "中英文版本均采用相同的60道题，确保一致性。"
+                    : "中英文版本均采用相同的60道题项，确保一致性。"
                   }
                 </p>
               </div>
@@ -645,13 +645,13 @@ export default function BSRIGame() {
               </button>
               {expandedSections.concept && (
                 <div className="px-6 py-6 bg-white animate-in slide-in-from-top duration-300">
-                  <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                  <p className="text-gray-700 leading-relaxed mb-4">
                     <span className="font-bold">
                       {language === "en" ? "Definition and Distinction: " : "定义与区分："}
                     </span>
                     {language === "en"
                       ? "Gender Role refers to a set of personalities, behaviors, and traits that an individual exhibits and which are culturally defined as either masculine (e.g., independent, assertive) or feminine (e.g., gentle, affectionate). Crucially, gender role is culturally constructed and is not determined by biological sex or sexual orientation."
-                      : "性别角色（Gender Role）指的是一个人所展现的，且被社会文化定义为男性化（如独立、果断）或女性化（如温柔、有爱心）的一系列性格、行为和特质。关键在于，性别角色是文化建构的，并非生理性别或性取向的决定因素。"
+                      : "性别角色（Gender Role）指个体展现的，且被社会文化定义为男性化（如独立、果断）或女性化（如温柔、有爱心）的一套性格、行为和特质。关键在于，性别角色是文化建构的，并非生理性别或性取向的决定因素。"
                     }
                   </p>
                 </div>
@@ -683,7 +683,7 @@ export default function BSRIGame() {
                           <p className="text-gray-700 leading-relaxed">
                             {language === "en"
                               ? "In the 1970s, the prevailing view in psychology was that 'masculinity' and 'femininity' were mutually exclusive, operating on a bipolar continuum. American psychologist Sandra Bem introduced the BSRI, aiming to challenge this traditional binary view of gender. Her purpose was to demonstrate through measurement that individuals could possess high levels of both trait categories simultaneously."
-                              : "在 20 世纪 70 年代，心理学界普遍认为「男性化」与「女性化」是非此即彼的对立两端。美国心理学家 Sandra Bem 提出 BSRI，旨在挑战这种传统的二元性别观。她的目的在于通过测量，证明个体可以同时拥有这两类特质。"
+                              : "在 20 世纪 70 年代，心理学界普遍认为“男性化”与“女性化”是非此即彼的对立两极。美国心理学家 Sandra Bem 提出 BSRI，旨在挑战这种传统的二元性别观。她的目的在于通过测量，证明个体可以同时拥有这两类特质。"
                             }
                           </p>
                         </div>
@@ -694,7 +694,7 @@ export default function BSRIGame() {
                           <p className="text-gray-700 leading-relaxed mb-3">
                             {language === "en"
                               ? "The BSRI's innovation lies in treating masculinity and femininity as two independent, simultaneously existing dimensions. Its measurement targets two dimensions of positive traits:"
-                              : "BSRI 的创新在于将男性化和女性化视为两把独立的、可以同时存在的尺子。它测量的目标是两个维度的积极特质："
+                              : "BSRI 的创新在于将男性化和女性化视为两把相互独立的、可以同时存在的量尺。它测量的目标是两个维度的积极特质："
                             }
                           </p>
                           <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
@@ -704,7 +704,7 @@ export default function BSRIGame() {
                               </span>
                               {language === "en"
                                 ? "Traits universally defined by society as 'masculine' (e.g., confidence, leadership)."
-                                : "即社会普遍认定的「男性化」特质（如自信、领导力）。"
+                                : "社会普遍认定的“男性化”特质（如自信、领导力）。"
                               }
                             </li>
                             <li>
@@ -713,7 +713,7 @@ export default function BSRIGame() {
                               </span>
                               {language === "en"
                                 ? "Traits universally defined by society as 'feminine' (e.g., empathy, nurturing)."
-                                : "即社会普遍认定的「女性化」特质（如共情、关怀）。"
+                                : "社会普遍认定的“女性化”特质（如共情、关怀）。"
                               }
                             </li>
                           </ul>
@@ -760,13 +760,13 @@ export default function BSRIGame() {
                             <li>
                               {language === "en"
                                 ? "'Androgynous' individuals, who possess high levels of both instrumental and expressive traits, are generally regarded as having the highest level of adaptability and psychological resilience, allowing them to respond flexibly to various situational demands."
-                                : "「双性化」个体同时具备高水平的工具性和表达性特质，被认为拥有最高的适应性和心理弹性，能够灵活应对不同情境的需求。"
+                                : "“双性化”个体同时具备高水平的工具性和表达性特质，被认为拥有最高的适应性和心理弹性，能够灵活应对不同情境的需求。"
                               }
                             </li>
                             <li>
                               {language === "en"
                                 ? "'Undifferentiated' individuals score low on both trait dimensions and are typically considered to have lower levels of psychological adjustment."
-                                : "「未分化」个体则两方面的特质均不突出，通常被认为适应性较弱。"
+                                : "“未分化”个体则两方面的特质均不突出，通常被认为适应能力较弱。"
                               }
                             </li>
                           </ul>
@@ -778,7 +778,7 @@ export default function BSRIGame() {
                           <p className="text-gray-700 leading-relaxed">
                             {language === "en"
                               ? "The BSRI's measurement of 'masculinity' and 'femininity' refers to prevailing societal stereotypes. We recognize today that traits such as independence, confidence, and assertiveness are positive human qualities shared by all, and are not exclusive to any single gender. The true value of the BSRI lies precisely in its ability to help us see how we can transcend the limitations imposed by these stereotypes."
-                              : "BSRI 测量的「男性化」和「女性化」，指的是社会上普遍存在的刻板印象。我们今天知道，独立、自信、果断等特质是人类共有的、积极的品质，它们不属于任何一个性别。BSRI 的真正价值，恰恰在于帮助我们看到自己如何超越这些刻板印象的限制。"
+                              : "BSRI 测量的“男性化”和“女性化”，指的是社会上普遍存在的刻板印象。我们今天知道，独立、自信、果断等特质是人类共有的、积极的品质，它们不属于任何一个性别。BSRI 的真正价值，恰恰在于帮助我们看到自己如何超越这些刻板印象的限制。"
                             }
                           </p>
                         </div>
@@ -800,17 +800,17 @@ export default function BSRIGame() {
                   </span>
                   {language === "en"
                     ? "Please regard your test results as a starting point, not an endpoint. Understanding your gender role style can help you recognize which positive traits you already possess and which traits (regardless of their \"masculine\" or \"feminine\" label) you wish to further develop. The ultimate goal is to achieve the integration of traits and the full realization of personal potential."
-                    : "请将您的测试结果视为一个起点，而非终点。了解自己的性别角色风格，可以帮助您认识到哪些积极特质您已经拥有，哪些特质您希望进一步发展，最终目标是实现特质的整合与个人的充分发展。"
+                    : "请将您的测试结果视为一个起点，而非终点。了解自己的性别角色风格，可以帮助您认识到哪些积极特质您已经拥有，哪些特质您希望进一步发展，最终目标是实现特质的整合与个人潜能的充分发展。"
                   }
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Button onClick={restart} className="bg-[#059669] hover:bg-[#10b981] text-white px-8 py-6 text-lg font-bold">
+                <Button onClick={restart} className="bg-[#059669] hover:bg-[#10b981] text-white px-8 py-6 text-lg font-bold w-full sm:w-auto">
                   {t("Retake Assessment", "重新测评")}
                 </Button>
-                <Link href="/community-space">
-                  <Button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-6 text-lg font-bold">
+                <Link href="/community-space" className="w-full sm:w-auto">
+                  <Button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-6 text-lg font-bold w-full">
                     {t("Try Other Games", "尝试其他游戏")}
                   </Button>
                 </Link>
