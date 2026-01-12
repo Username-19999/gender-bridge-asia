@@ -131,7 +131,7 @@ export default function AcademicHub() {
 
             <h2 className="text-3xl sm:text-4xl font-black mb-8">{t("Research Blog", "研究博客")}</h2>
             <p className="text-base sm:text-xl text-gray-600 mb-8">
-              {t("Stay updated with our latest research findings, policy analysis, and academic insights", "了解我们的最新研究成果、政策分析和学术见解")}
+              {t("Stay updated with our latest research findings, policy analysis, and academic insights.", "了解我们的最新研究成果、政策分析和学术见解")}
             </p>
             <Link href="/blog">
               <div className="bg-gradient-to-r from-[#00a19a] to-[#008c85] text-white p-8 rounded-lg hover:shadow-xl transition-all cursor-pointer">

@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* Full-Screen Slides */}
       <section className="bg-[#F8FAFB] relative overflow-hidden border-b border-black/5 shadow-sm">
-        <div className="min-h-[500px] md:min-h-[550px] lg:h-[600px] w-full relative">
+        <div className="min-h-[420px] md:min-h-[480px] lg:h-[520px] w-full relative">
           {slides.map((slide, index) => (
             <div
               key={index}

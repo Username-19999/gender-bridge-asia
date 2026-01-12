@@ -73,29 +73,6 @@ export default function AboutUs() {
           </div>
         </AnimatedSection>
 
-        <div className="border-t-4 border-gray-300 my-12"></div>
-
-        <AnimatedSection delay={200}>
-          <div>
-            <h1 className="text-4xl sm:text-6xl font-black mb-8">{t("Our Team", "我们的团队")}</h1>
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-[#00a19a]">Yara, LI</h2>
-              <p className="text-base sm:text-xl font-semibold mb-4 text-gray-800">{t("Founder & Project Director", "创始人 & 项目总监")}</p>
-              <p className="text-sm sm:text-lg leading-relaxed text-gray-700 mb-4">
-                {language === "en"
-                  ? "Yara, LI holds an M.A. in Sociology from the University of Manchester. Her research interests are highly focused on gender issues in the digital age, encompassing the intersection of AI and Gender, Digital Humanities, Platform Governance, and algorithmic bias."
-                  : "Yara, LI 拥有曼彻斯特大学社会学硕士 (M.A.) 学位。她的研究兴趣高度聚焦于数字时代下的性别议题，包括人工智能与性别、数字人文、平台治理与算法偏见的交叉领域。"
-                }
-              </p>
-              <p className="text-sm sm:text-lg leading-relaxed text-gray-700">
-                {language === "en"
-                  ? "She has previously worked for technology companies such as JD, Kuaishou, and NetEase, accumulating extensive experience in data and operations. This unique cross-disciplinary background ensures the depth of the website's content and the efficacy of its dissemination strategy, aiming to achieve the project's non-profit goals in a professional and pragmatic manner."
-                  : "她曾任职于京东、快手、网易等科技公司，积累了丰富的数据与运营经验。这一独特的学术-业界跨界背景确保了网站内容的深度和传播策略的有效性，致力于以专业、务实的方式实现项目的公益目标。"
-                }
-              </p>
-            </div>
-          </div>
-        </AnimatedSection>
       </div>
     </div>
   );

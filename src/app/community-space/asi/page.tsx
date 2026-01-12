@@ -58,8 +58,8 @@ export default function ASIGame() {
     },
     {
       statement: {
-        en: "Many women are actually seeking special favors under the guise of asking for 'equality.'",
-        zh: "许多女性实际上是在以要求'平等'为幌子寻求特殊照顾。"
+        en: "Many women are actually seeking special favors under the guise of asking for \"equality\".",
+        zh: "许多女性实际上是在以要求\"平等\"为幌子寻求特殊照顾。"
       },
       reversed: false
     },

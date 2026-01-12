@@ -301,12 +301,12 @@ export function CommunityVoices() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div className="py-4">
       {/* Main Title */}
       <div className="mb-12">
         <h2 className="text-3xl sm:text-4xl font-black mb-4">{t("Community Voices", "社群之声")}</h2>
         <p className="text-lg sm:text-xl text-gray-600 mb-8">
-          {t("Diverse perspectives from our community members", "来自社群成员的多元视角")}
+          {t("Diverse perspectives from our community members.", "来自社群成员的多元视角")}
         </p>
 
         {/* Submission Entry */}
@@ -348,7 +348,7 @@ export function CommunityVoices() {
       <div className="mb-16">
         <div className="mb-8">
           <h3 className="text-2xl sm:text-3xl font-bold mb-2">
-            {t("Whispers from the Community", "社群心声")}
+            {t("Anonymous Reflections", "匿名随笔")}
           </h3>
           <p className="text-base sm:text-lg text-gray-600">
             {t("A safe space for sharing personal experiences, visual stories, and anonymous reflections.", "一个分享个人经验、视觉故事和匿名反思的安全空间。")}
@@ -428,7 +428,7 @@ export function CommunityVoices() {
                         <MessageSquare className="w-8 h-8 text-[#d62e39] flex-shrink-0 mt-1" />
                         <div className="flex-1">
                           <h5 className="text-lg font-bold mb-2 text-[#d62e39]">
-                            {t("Whispers from the Community", "社群心声")}
+                            {t("Anonymous Reflections", "匿名随笔")}
                           </h5>
                           <p className="text-sm text-gray-600 mb-2">
                             {t("Personal stories, experience sharing, private reflections", "个人故事、经验分享、私密感受")}

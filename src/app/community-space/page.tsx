@@ -58,7 +58,7 @@ export default function CommunitySpace() {
           <div className="mb-16">
             <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Community Space", "社区空间")}</h1>
             <p className="text-base sm:text-xl text-gray-600 mb-12">
-              {t("Explore interactive tools to deepen your understanding of gender equality", "通过互动工具深化对性别平等的理解")}
+              {t("Explore interactive tools to deepen your understanding of gender equality.", "通过互动工具深化对性别平等的理解")}
             </p>
 
             <h2 className="text-3xl sm:text-4xl font-black mb-8">{t("Interactive Tools", "互动工具")}</h2>
@@ -82,7 +82,7 @@ export default function CommunitySpace() {
             </div>
 
             {/* Games Grid - 2x2 Layout */}
-            <div className="max-w-6xl mx-auto mb-16">
+            <div className="max-w-7xl mx-auto mb-16">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {games.map((game, index) => (
                   <Link key={game.id} href={game.link}>

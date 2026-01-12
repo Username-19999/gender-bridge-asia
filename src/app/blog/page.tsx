@@ -39,7 +39,7 @@ export default function BlogPage() {
           <div className="mb-16">
             <h1 className="text-4xl sm:text-6xl font-black mb-4">{t("Research Blog", "研究博客")}</h1>
             <p className="text-base sm:text-xl text-gray-600 mb-12">
-              {t("Explore cutting-edge research directions in gender studies and regional insights from across East Asia", "探索性别研究的前沿方向，并获取东亚区域洞察")}
+              {t("Explore cutting-edge research directions in gender studies and regional insights from across East Asia.", "探索性别研究的前沿方向，并获取东亚区域洞察")}
             </p>
 
             <div className="grid gap-8">
