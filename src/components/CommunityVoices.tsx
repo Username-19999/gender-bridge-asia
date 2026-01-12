@@ -273,12 +273,6 @@ export function CommunityVoices() {
           </div>
         )}
         
-        <div className="flex items-center space-x-2 mb-2">
-          <span className={`px-2 py-1 rounded-full text-xs font-semibold ${getTypeColor(submission.type)}`}>
-            {getTypeLabel(submission.type)}
-          </span>
-        </div>
-
         <h3 className="text-lg font-bold mb-2 line-clamp-2">{submission.title}</h3>
         <p className="text-gray-600 text-sm mb-3 line-clamp-2">{submission.content}</p>
         
